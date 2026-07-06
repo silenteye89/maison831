@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 530" fill="none">
+  <rect width="400" height="530" fill="#F5F0E8"/>
+
+  <!-- Hair - short bob -->
+  <path d="M120 180 C100 160, 95 140, 100 120 C105 95, 120 75, 145 62 C170 50, 200 45, 230 48 C260 52, 285 65, 300 85 C312 100, 315 120, 312 145 C310 160, 305 175, 298 190 C295 200, 292 210, 290 225 L285 250 C283 260, 278 268, 270 272 L265 274"
+        stroke="#2C2420" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M120 180 C115 195, 112 215, 115 235 C117 248, 122 258, 130 265 L138 270"
+        stroke="#2C2420" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Hair bangs -->
+  <path d="M135 130 C145 108, 165 92, 190 85 C215 78, 240 80, 260 90 C275 97, 288 110, 295 128"
+        stroke="#2C2420" stroke-width="2.2" stroke-linecap="round"/>
+  <path d="M140 125 C150 105, 170 90, 195 84"
+        stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Face outline -->
+  <path d="M145 175 C140 195, 140 220, 148 245 C155 265, 168 282, 185 295 C195 302, 205 305, 215 302 C230 298, 242 288, 252 272 C260 258, 265 240, 266 220 C267 200, 264 185, 260 175"
+        stroke="#2C2420" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Left eye -->
+  <ellipse cx="175" cy="210" rx="12" ry="8" stroke="#2C2420" stroke-width="2" fill="none"/>
+  <circle cx="175" cy="210" r="4" fill="#2C2420"/>
+  <circle cx="173" cy="208" r="1.5" fill="white"/>
+
+  <!-- Right eye -->
+  <ellipse cx="230" cy="210" rx="12" ry="8" stroke="#2C2420" stroke-width="2" fill="none"/>
+  <circle cx="230" cy="210" r="4" fill="#2C2420"/>
+  <circle cx="228" cy="208" r="1.5" fill="white"/>
+
+  <!-- Eyebrows -->
+  <path d="M160 195 C167 190, 178 189, 188 192" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M218 192 C228 189, 238 190, 245 195" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M200 225 C198 235, 195 242, 198 245 C200 247, 204 247, 206 245"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Mouth - cute smile -->
+  <path d="M185 262 C190 270, 200 274, 210 272 C215 270, 218 267, 220 264"
+        stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Blush -->
+  <circle cx="165" cy="240" r="8" fill="#E8C4B0" opacity="0.4"/>
+  <circle cx="240" cy="238" r="8" fill="#E8C4B0" opacity="0.4"/>
+
+  <!-- Ears -->
+  <path d="M140 200 C134 200, 130 208, 132 216 C133 222, 137 226, 142 225"
+        stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M265 198 C270 198, 274 206, 273 214 C272 220, 268 224, 264 223"
+        stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <path d="M190 300 L188 330" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M215 298 L217 330" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Shoulders / top -->
+  <path d="M130 380 C140 355, 160 340, 188 332 L217 332 C245 340, 265 355, 275 380"
+        stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Collar -->
+  <path d="M175 335 L200 360 L225 335" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Hair side strands -->
+  <path d="M125 170 C120 185, 118 205, 120 225 C121 235, 125 245, 132 252"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M290 168 C293 185, 294 205, 290 225 C288 235, 282 248, 275 255"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

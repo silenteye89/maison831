@@ -8,8 +8,8 @@ const founders = [
   {
     name: "Ari",
     role: "Founder · Creative Director",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&q=80",
-    color: "#C4B59E",
+    image: "/images/ari-illustration.svg",
+    color: "#F5F0E8",
     bio: "6년간의 대기업 HR 경험을 바탕으로 사람과 브랜드를 잇는 공간을 설계합니다. 디자인, 브랜딩, 공간 스타일링까지 Maison 831의 모든 크리에이티브를 총괄합니다.",
     skills: [
       "6+ Years in Corporate HR",
@@ -23,8 +23,8 @@ const founders = [
   {
     name: "Jun",
     role: "Founder · Software Engineer",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-    color: "#8B7355",
+    image: "/images/jun-illustration.svg",
+    color: "#F5F0E8",
     bio: "KAIST 졸업 후 백엔드 서버 개발자로 커리어를 시작했습니다. 기술의 깊이와 디자인의 섬세함을 동시에 추구하며, Maison 831의 모든 기술적 기반을 책임집니다.",
     skills: [
       "KAIST Graduate",

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 530" fill="none">
+  <rect width="400" height="530" fill="#F5F0E8"/>
+
+  <!-- Hair - comma hair style -->
+  <path d="M130 155 C125 135, 128 110, 140 90 C155 68, 178 55, 205 50 C232 46, 258 52, 278 68 C295 82, 305 100, 305 125 C305 140, 302 152, 298 162"
+        stroke="#2C2420" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Comma bang - key feature -->
+  <path d="M175 90 C170 80, 160 72, 155 78 C148 86, 152 100, 160 110 C165 116, 172 118, 178 115"
+        stroke="#2C2420" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M180 88 C178 78, 168 68, 160 72"
+        stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Hair top volume -->
+  <path d="M145 100 C155 78, 175 62, 200 56 C225 52, 250 58, 270 72 C285 82, 295 98, 298 118"
+        stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+  <path d="M190 85 C195 72, 210 64, 225 62 C240 60, 255 65, 265 75"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Face outline -->
+  <path d="M148 165 C142 185, 140 210, 145 238 C150 260, 162 278, 180 292 C190 300, 202 304, 215 302 C228 300, 240 292, 250 280 C260 265, 266 245, 268 225 C270 205, 268 185, 262 168"
+        stroke="#2C2420" stroke-width="2.2" stroke-linecap="round"/>
+
+  <!-- Glasses - round frame -->
+  <rect x="152" y="196" width="40" height="32" rx="16" stroke="#2C2420" stroke-width="2.2" fill="none"/>
+  <rect x="212" y="196" width="40" height="32" rx="16" stroke="#2C2420" stroke-width="2.2" fill="none"/>
+  <!-- Bridge -->
+  <path d="M192 210 C198 205, 208 205, 212 210" stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+  <!-- Temple arms -->
+  <path d="M152 208 L142 205" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M252 208 L262 205" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Eyes behind glasses -->
+  <circle cx="172" cy="212" r="4" fill="#2C2420"/>
+  <circle cx="170" cy="210" r="1.5" fill="white"/>
+  <circle cx="232" cy="212" r="4" fill="#2C2420"/>
+  <circle cx="230" cy="210" r="1.5" fill="white"/>
+
+  <!-- Eyebrows -->
+  <path d="M158 190 C165 185, 177 184, 186 187" stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+  <path d="M218 187 C227 184, 239 185, 246 190" stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Nose -->
+  <path d="M202 228 C200 238, 197 244, 200 247 C202 249, 206 249, 208 247"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Mouth - slight smile -->
+  <path d="M188 265 C195 272, 205 274, 215 270"
+        stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Ears -->
+  <path d="M142 200 C136 200, 132 208, 134 218 C135 224, 139 228, 144 226"
+        stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M268 198 C274 198, 278 206, 276 216 C275 222, 271 226, 266 224"
+        stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Neck -->
+  <path d="M192 300 L190 332" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M218 298 L220 332" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Shoulders / shirt -->
+  <path d="M125 385 C135 358, 158 342, 190 334 L220 334 C252 342, 275 358, 285 385"
+        stroke="#2C2420" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Collar -->
+  <path d="M178 338 L203 362 L228 338" stroke="#2C2420" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Hair side -->
+  <path d="M135 150 C130 165, 130 180, 135 195"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M298 148 C302 165, 302 180, 298 195"
+        stroke="#2C2420" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
