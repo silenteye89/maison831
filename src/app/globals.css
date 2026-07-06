@@ -1,19 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css');
 @import "tailwindcss";
 
 @theme inline {
   --color-background: #FDFBF7;
   --color-foreground: #2C2420;
   --color-warm-white: #FDFBF7;
+  --color-off-white: #FAF8F4;
   --color-ivory: #F5F0E8;
   --color-cream: #EDE6D8;
+  --color-beige: #D9CEBC;
   --color-stone: #C4B59E;
   --color-oak: #8B7355;
+  --color-walnut: #5C4A3A;
   --color-brass: #B8976A;
+  --color-bronze: #8B6F47;
   --color-forest: #3D5A3E;
   --color-dark-brown: #2C2420;
-  --font-serif: 'Cormorant Garamond', Georgia, serif;
-  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-matte-black: #1A1714;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-display: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Pretendard Variable', 'Pretendard', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -33,6 +40,9 @@ body {
   color: var(--color-dark-brown);
   font-family: var(--font-sans);
   overflow-x: hidden;
+  letter-spacing: -0.01em;
+  line-height: 3.6;
+  font-size: 15px;
 }
 
 ::selection {
@@ -44,12 +54,21 @@ section {
   scroll-margin-top: 80px;
 }
 
+p + p {
+  margin-top: 1.8em;
+}
+
+h1, h2, h3, h4 {
+  line-height: 2.4;
+  margin-bottom: 0;
+}
+
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-ivory);
+  background: var(--color-off-white);
 }
 
 ::-webkit-scrollbar-thumb {

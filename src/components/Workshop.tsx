@@ -1,0 +1,109 @@
+"use client";
+
+import Link from "next/link";
+import { FadeIn } from "./AnimationProvider";
+import { workshops } from "@/lib/data";
+
+export default function Workshop() {
+  const activeWorkshops = workshops.filter((w) => w.active).slice(0, 4);
+
+  return (
+    <section id="workshop" className="bg-ivory pt-[140px] pb-[160px] md:pt-[180px] md:pb-[200px] px-6 md:px-12">
+      <div className="max-w-[1100px] mx-auto">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-20 md:mb-28 gap-6">
+          <div>
+            <FadeIn>
+              <p className="text-xs tracking-[0.3em] uppercase text-oak mb-8">
+                Workshops
+              </p>
+            </FadeIn>
+            <FadeIn delay={0.1}>
+              <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-dark-brown font-light tracking-wide">
+                일상에 영감을 더하다
+              </h2>
+            </FadeIn>
+            <FadeIn delay={0.15}>
+              <p className="text-sm text-walnut mt-12 max-w-md leading-[4]">
+                위스키 클래스, 브랜딩 클래스, 취미 클래스 등
+                다양한 원데이 클래스를 경험해보세요.
+              </p>
+            </FadeIn>
+          </div>
+          <FadeIn delay={0.2}>
+            <Link
+              href="/workshop"
+              className="text-[11px] tracking-[0.15em] uppercase text-oak hover:text-brass transition-colors duration-500"
+            >
+              전체 클래스 보기 →
+            </Link>
+          </FadeIn>
+        </div>
+
+        {/* Workshop List */}
+        <div className="border-t border-stone/18">
+          {activeWorkshops.map((workshop, i) => (
+            <FadeIn key={workshop.id} delay={i * 0.08}>
+              <Link href={`/workshop/${workshop.id}`} className="block">
+                <div className="group border-b border-stone/18 py-10 md:py-12 cursor-pointer hover:bg-cream/20 transition-colors duration-700 -mx-6 md:-mx-12 px-6 md:px-12">
+                  <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-center">
+                    {/* Date */}
+                    <div className="md:col-span-2">
+                      <p className="text-[11px] tracking-[0.2em] uppercase text-brass">
+                        {workshop.category}
+                      </p>
+                      {workshop.schedules[0] && (
+                        <>
+                          <p className="font-serif text-lg text-dark-brown mt-1">
+                            {workshop.schedules[0].date.replace(/-/g, ". ")}
+                          </p>
+                        </>
+                      )}
+                    </div>
+
+                    {/* Title & Description */}
+                    <div className="md:col-span-6">
+                      <h3 className="font-serif text-xl md:text-2xl text-dark-brown group-hover:text-brass transition-colors duration-500 mb-4">
+                        {workshop.title}
+                      </h3>
+                      <p className="text-xs text-oak mb-2">
+                        {workshop.subtitle}
+                      </p>
+                      <p className="text-sm text-walnut">
+                        {workshop.description}
+                      </p>
+                    </div>
+
+                    {/* Details */}
+                    <div className="md:col-span-2 flex md:flex-col gap-4 md:gap-1">
+                      <p className="text-xs text-oak">{workshop.duration}</p>
+                      <p className="text-xs text-brass">
+                        ₩{workshop.price.toLocaleString()}
+                      </p>
+                    </div>
+
+                    {/* CTA */}
+                    <div className="md:col-span-2 md:text-right">
+                      <span className="inline-flex items-center gap-2 text-[11px] tracking-[0.15em] uppercase text-dark-brown opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        자세히 보기
+                        <svg
+                          className="w-3 h-3"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={1.5}
+                        >
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+            </FadeIn>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

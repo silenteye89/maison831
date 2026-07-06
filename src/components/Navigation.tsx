@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { label: "Story", href: "#story" },
-  { label: "Experience", href: "#experience" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Development", href: "#development" },
+  { label: "Portfolio", href: "#portfolio" },
   { label: "Space", href: "#space" },
+  { label: "Workshop", href: "#workshop" },
   { label: "Vintage", href: "#vintage" },
-  { label: "Events", href: "#events" },
-  { label: "Studio", href: "#studio" },
-  { label: "Journal", href: "#journal" },
+  { label: "Contact", href: "#contact" },
 ];
 
 export default function Navigation() {
@@ -44,18 +45,25 @@ export default function Navigation() {
         transition={{ duration: 0.8, delay: 1.5, ease: [0.25, 0.4, 0.25, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
           isScrolled
-            ? "bg-warm-white/90 backdrop-blur-md shadow-[0_1px_0_rgba(196,181,158,0.2)]"
+            ? "bg-warm-white/92 backdrop-blur-md shadow-[0_1px_0_rgba(196,181,158,0.15)]"
             : "bg-transparent"
         }`}
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-20">
           <a
             href="#"
-            className={`font-serif text-xl tracking-[0.2em] transition-colors duration-500 ${
+            className={`flex items-center gap-3 transition-colors duration-500 ${
               isScrolled ? "text-dark-brown" : "text-white"
             }`}
           >
-            MAISON 831
+            <span className={`w-9 h-9 flex items-center justify-center border font-serif text-lg font-light tracking-wide transition-colors duration-500 ${
+              isScrolled ? "border-dark-brown/30" : "border-white/40"
+            }`}>
+              M
+            </span>
+            <span className="font-serif text-sm tracking-[0.25em] hidden sm:inline">
+              MAISON 831
+            </span>
           </a>
 
           {/* Desktop Nav */}
@@ -64,8 +72,8 @@ export default function Navigation() {
               <a
                 key={link.href}
                 href={link.href}
-                className={`text-[11px] tracking-[0.15em] uppercase transition-colors duration-500 hover:text-brass ${
-                  isScrolled ? "text-dark-brown" : "text-white/90"
+                className={`text-[10px] tracking-[0.15em] uppercase transition-colors duration-500 hover:text-brass ${
+                  isScrolled ? "text-dark-brown/70" : "text-white/80"
                 }`}
               >
                 {link.label}
@@ -127,6 +135,19 @@ export default function Navigation() {
                 </motion.a>
               ))}
             </div>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="absolute bottom-12 text-center"
+            >
+              <p className="text-[10px] tracking-[0.2em] uppercase text-stone">
+                010-8687-2129
+              </p>
+              <p className="text-[10px] tracking-[0.15em] text-stone/60 mt-2">
+                @maison831.kr
+              </p>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

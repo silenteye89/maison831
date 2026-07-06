@@ -1,13 +1,13 @@
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import BrandStory from "@/components/BrandStory";
-import Experience from "@/components/Experience";
+import Services from "@/components/Services";
+import WebDevelopment from "@/components/WebDevelopment";
+import Portfolio from "@/components/Portfolio";
 import OurSpace from "@/components/OurSpace";
+import Workshop from "@/components/Workshop";
 import VintageCollection from "@/components/VintageCollection";
-import UpcomingEvents from "@/components/UpcomingEvents";
-import RentalSpace from "@/components/RentalSpace";
-import CreativeStudio from "@/components/CreativeStudio";
-import Journal from "@/components/Journal";
+import Contact from "@/components/Contact";
 import InstagramGallery from "@/components/InstagramGallery";
 import Footer from "@/components/Footer";
 
@@ -18,13 +18,13 @@ export default function Home() {
       <main>
         <Hero />
         <BrandStory />
-        <Experience />
+        <Services />
+        <WebDevelopment />
+        <Portfolio />
         <OurSpace />
+        <Workshop />
         <VintageCollection />
-        <UpcomingEvents />
-        <RentalSpace />
-        <CreativeStudio />
-        <Journal />
+        <Contact />
         <InstagramGallery />
       </main>
       <Footer />

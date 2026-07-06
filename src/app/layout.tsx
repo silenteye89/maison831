@@ -2,25 +2,29 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "MAISON 831 — Curated Lifestyle & Creative Studio",
+  title: "MAISON 831 — Curated Lifestyle Studio",
   description:
-    "Maison 831은 유럽 빈티지 감성의 라이프스타일 공간입니다. 스페셜티 커피, 빈티지 셀렉트샵, 위스키 클래스, 원데이 클래스, 공간대여, 크리에이티브 스튜디오를 경험하세요.",
+    "메종831은 카이스트 출신 엔지니어가 함께 직접 디자인하고 개발하는 웹사이트 제작, 공간대여, 원데이 클래스, 빈티지 컬렉션을 운영하는 유럽 감성의 라이프스타일 스튜디오입니다.",
   keywords: [
-    "Maison 831",
-    "라이프스타일",
-    "빈티지",
-    "스페셜티 커피",
-    "위스키 클래스",
-    "공간대여",
+    "MAISON 831",
+    "메종831",
+    "홈페이지 제작",
+    "웹사이트 개발",
+    "앱 개발",
+    "카이스트",
     "브랜딩",
+    "공간대여",
+    "원데이 클래스",
+    "빈티지",
+    "라이프스타일 스튜디오",
   ],
   openGraph: {
-    title: "MAISON 831 — Curated Lifestyle & Creative Studio",
+    title: "MAISON 831 — Curated Lifestyle Studio",
     description:
-      "유럽 빈티지 감성의 라이프스타일 공간. 커피, 빈티지, 위스키, 크리에이티브 스튜디오.",
+      "일과 취향이 만나는 공간. 카이스트 출신 엔지니어가 함께 직접 디자인하고 개발하는 프리미엄 웹사이트 제작 & 유럽 감성 라이프스타일 스튜디오.",
     type: "website",
     locale: "ko_KR",
-    url: "https://www.maison831.com",
+    url: "https://maison831.com",
     siteName: "MAISON 831",
   },
 };
