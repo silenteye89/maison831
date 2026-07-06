@@ -27,44 +27,43 @@ const inquiryTypes = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-ivory pt-[140px] pb-[160px] md:pt-[180px] md:pb-[200px] px-8 md:px-16">
+    <section id="contact" className="bg-ivory pt-[120px] pb-[140px] md:pt-[140px] md:pb-[160px] px-6 md:px-12">
       <div className="max-w-[1100px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-32 md:mb-44">
+        <div className="text-center mb-12 md:mb-14">
           <FadeIn>
-            <p className="text-[13px] tracking-[0.3em] uppercase text-oak mb-12">
+            <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-10 md:mb-14">
               Contact & Reservation
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-dark-brown font-light tracking-wide mb-16 leading-[1.8]">
+            <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-dark-brown font-normal tracking-[-0.02em] leading-[1.2] mb-6">
               함께 만들어갈 준비가 되셨나요
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-base md:text-lg text-walnut max-w-lg mx-auto leading-[2.4]">
+            <p className="text-base md:text-lg text-walnut max-w-[560px] mx-auto leading-[1.85]">
               프로젝트 문의, 공간 예약, 클래스 신청 등
-              <br />
               무엇이든 편하게 연락해주세요.
             </p>
           </FadeIn>
         </div>
 
         {/* Inquiry Types */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-10 mb-32 md:mb-44">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 mb-16">
           {inquiryTypes.map((item, i) => (
             <FadeIn key={item.title} delay={i * 0.08}>
               <a
                 href="tel:010-8687-2129"
-                className="group block p-10 md:p-14 border border-stone/12 hover:bg-cream/30 transition-all duration-700"
+                className="group block p-8 md:p-10 border border-stone/12 hover:bg-cream/30 transition-all duration-700"
               >
-                <p className="text-[12px] tracking-[0.3em] uppercase text-oak mb-5">
+                <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-4">
                   {item.subtitle}
                 </p>
-                <h3 className="font-serif text-2xl md:text-[1.75rem] text-dark-brown mb-8 group-hover:text-brass transition-colors duration-500 leading-[1.8]">
+                <h3 className="font-serif text-[20px] md:text-[22px] text-dark-brown mb-5 group-hover:text-brass transition-colors duration-500 leading-[1.3] tracking-[-0.01em]">
                   {item.title}
                 </h3>
-                <p className="text-base text-walnut leading-[1.9]">
+                <p className="text-base text-walnut leading-[1.85]">
                   {item.description}
                 </p>
               </a>
@@ -74,13 +73,13 @@ export default function Contact() {
 
         {/* Contact Info */}
         <FadeIn delay={0.2}>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12 pt-16 border-t border-stone/12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-10 pt-12 border-t border-stone/12">
             {/* Address */}
             <div className="text-center md:text-left">
-              <p className="text-[12px] tracking-[0.3em] uppercase text-oak mb-8">
+              <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-5">
                 Address
               </p>
-              <p className="text-base leading-[2.4] text-dark-brown">
+              <p className="text-base leading-[1.85] text-dark-brown">
                 경기도 성남시 수정구 고등로 3
                 <br />
                 현대지식산업센터 성남고등
@@ -91,15 +90,15 @@ export default function Contact() {
 
             {/* Contact */}
             <div className="text-center">
-              <p className="text-[12px] tracking-[0.3em] uppercase text-oak mb-8">
+              <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-5">
                 Contact
               </p>
-              <p className="text-base leading-[2.4] text-dark-brown">
+              <p className="text-base leading-[1.85] text-dark-brown">
                 <a href="tel:010-8687-2129" className="hover:text-brass transition-colors duration-500">
                   010-8687-2129
                 </a>
               </p>
-              <p className="text-base leading-[2.4] text-dark-brown mt-3">
+              <p className="text-base leading-[1.85] text-dark-brown mt-2">
                 <a
                   href="https://maison831.com"
                   target="_blank"
@@ -113,10 +112,10 @@ export default function Contact() {
 
             {/* Social */}
             <div className="text-center md:text-right">
-              <p className="text-[12px] tracking-[0.3em] uppercase text-oak mb-8">
+              <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-5">
                 Social
               </p>
-              <p className="text-base leading-[2.4] text-dark-brown">
+              <p className="text-base leading-[1.85] text-dark-brown">
                 <a
                   href="https://instagram.com/maison831.kr"
                   target="_blank"

@@ -19,22 +19,22 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="pt-[140px] pb-[160px] md:pt-[180px] md:pb-[200px] px-8 md:px-16">
-      <div className="max-w-[1400px] mx-auto">
+    <section id="portfolio" className="pt-[120px] pb-[140px] md:pt-[140px] md:pb-[160px] px-6 md:px-12">
+      <div className="max-w-[1200px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-24 md:mb-28">
+        <div className="text-center mb-12 md:mb-14">
           <FadeIn>
-            <p className="text-[13px] tracking-[0.3em] uppercase text-oak mb-12">
+            <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-10 md:mb-14">
               Selected Works
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-dark-brown font-light tracking-wide mb-10 leading-[1.8]">
+            <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-dark-brown font-normal tracking-[-0.02em] leading-[1.2] mb-6">
               Selected Work
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-base md:text-lg text-walnut max-w-[650px] mx-auto leading-[1.8] text-center">
+            <p className="text-base md:text-lg text-walnut max-w-[620px] mx-auto leading-[1.85] text-center">
               브랜드를 이해하고, 기술로 완성합니다.
               <br />
               메종831이 만든 프로젝트를 소개합니다.
@@ -43,10 +43,10 @@ export default function Portfolio() {
         </div>
 
         {/* Projects */}
-        <div className="space-y-32 md:space-y-44">
+        <div className="space-y-24 md:space-y-32">
           {projects.map((project, i) => (
             <FadeIn key={project.title} delay={i * 0.15}>
-              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}>
+              <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center ${i % 2 === 1 ? "lg:direction-rtl" : ""}`}>
                 {/* Image */}
                 <FadeIn delay={0.1} className={i % 2 === 1 ? "lg:order-2" : ""}>
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className="block relative group overflow-hidden">
@@ -61,23 +61,23 @@ export default function Portfolio() {
 
                 {/* Info */}
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <p className="text-[12px] tracking-[0.3em] uppercase text-oak mb-6">
+                  <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-4">
                     {project.category}
                   </p>
-                  <h3 className="font-serif text-3xl md:text-4xl text-dark-brown font-light mb-4 leading-[1.6]">
+                  <h3 className="font-serif text-[24px] md:text-[28px] text-dark-brown font-normal mb-3 leading-[1.3] tracking-[-0.01em]">
                     {project.title}
                   </h3>
-                  <p className="text-base text-brass mb-10 tracking-[0.05em]">
+                  <p className="text-[15px] text-brass mb-8 tracking-[0.03em]">
                     {project.subtitle}
                   </p>
-                  <p className="text-base md:text-lg text-walnut leading-[2.2] mb-12 max-w-lg">
+                  <p className="text-base md:text-lg text-walnut leading-[1.85] mb-10 max-w-lg">
                     {project.description}
                   </p>
-                  <div className="flex flex-wrap gap-3 mb-10">
+                  <div className="flex flex-wrap gap-2.5 mb-8">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[11px] tracking-[0.1em] text-oak border border-stone/20 px-4 py-2"
+                        className="text-[12px] tracking-[0.08em] text-oak border border-stone/20 px-3.5 py-1.5"
                       >
                         {tag}
                       </span>
@@ -87,13 +87,12 @@ export default function Portfolio() {
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-4 text-[15px] tracking-[0.02em] font-medium text-dark-brown border border-dark-brown/20 px-8 h-[50px] rounded-full hover:bg-dark-brown hover:text-ivory hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+                    className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-medium text-dark-brown border border-dark-brown/20 px-7 h-[46px] rounded-full hover:bg-dark-brown hover:text-ivory hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
                   >
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;사이트 방문하기
+                    사이트 방문하기
                     <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>
-                    &nbsp;&nbsp;&nbsp;
                   </a>
                 </div>
               </div>
@@ -102,22 +101,15 @@ export default function Portfolio() {
         </div>
 
         {/* CTA */}
-        <FadeIn delay={0.3} className="text-center mt-20 md:mt-24">
+        <FadeIn delay={0.3} className="text-center mt-16">
           <a
             href="#contact"
-            className="inline-flex items-center justify-center gap-4 text-[15px] tracking-[0.02em] font-medium bg-dark-brown text-ivory px-8 h-[50px] rounded-full hover:bg-brass hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-medium bg-dark-brown text-ivory px-8 h-[48px] rounded-full hover:bg-brass hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;프로젝트 문의하기
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={1}
-            >
+            프로젝트 문의하기
+            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-            &nbsp;&nbsp;&nbsp;
           </a>
         </FadeIn>
       </div>

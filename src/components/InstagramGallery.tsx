@@ -14,16 +14,16 @@ const photos = [
 
 export default function InstagramGallery() {
   return (
-    <section className="py-28 md:py-36 px-6 md:px-12">
-      <div className="max-w-[1400px] mx-auto">
+    <section className="py-20 md:py-28 px-6 md:px-12">
+      <div className="max-w-[1200px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-14 md:mb-18">
+        <div className="text-center mb-10 md:mb-12">
           <FadeIn>
             <a
               href="https://instagram.com/maison831.kr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[10px] tracking-[0.3em] uppercase text-stone hover:text-brass transition-colors duration-500"
+              className="text-[13px] tracking-[0.2em] uppercase text-stone hover:text-brass transition-colors duration-500"
             >
               @maison831.kr
             </a>
@@ -31,9 +31,9 @@ export default function InstagramGallery() {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-3">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-2.5">
           {photos.map((photo, i) => (
-            <ImageReveal key={i} delay={i * 0.06}>
+            <ImageReveal key={i} delay={i * 0.05}>
               <motion.a
                 href="https://instagram.com/maison831.kr"
                 target="_blank"

@@ -71,12 +71,12 @@ export default function Hero() {
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
-            className="flex items-center gap-4 mb-4"
+            className="flex items-center gap-3 mb-4"
           >
-            <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border border-white/50 font-serif text-xl sm:text-2xl text-white font-light">
+            <span className="w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center border border-white/50 font-serif text-lg sm:text-xl text-white font-light">
               M
             </span>
-            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white tracking-[0.18em] font-light">
+            <h1 className="font-serif text-2xl sm:text-3xl md:text-4xl text-white tracking-[0.18em] font-normal">
               MAISON 831
             </h1>
           </motion.div>
@@ -88,7 +88,7 @@ export default function Hero() {
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-            className="text-white/70 text-sm sm:text-base tracking-[0.08em] font-light"
+            className="text-white/65 text-[14px] sm:text-[15px] tracking-[0.04em] font-light"
           >
             일과 취향, 브랜드와 사람, 기술과 공간을 연결합니다.
           </motion.p>
@@ -99,17 +99,17 @@ export default function Hero() {
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ duration: 0.8, delay: 1.0 }}
-          className="w-16 h-[1px] bg-brass/60 mb-8 origin-center"
+          className="w-12 h-[1px] bg-brass/50 mb-8 origin-center"
         />
 
-        {/* Phone Number - Large */}
+        {/* Phone Number */}
         <div className="overflow-hidden mb-10">
           <motion.a
             href="tel:010-8687-2129"
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
             transition={{ duration: 0.8, delay: 1.1, ease: [0.25, 0.4, 0.25, 1] }}
-            className="block font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-[0.05em] font-light hover:text-brass transition-colors duration-500"
+            className="block font-serif text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] text-white tracking-[0.02em] font-normal leading-[1.1] hover:text-brass transition-colors duration-500"
           >
             010-8687-2129
           </motion.a>
@@ -124,7 +124,7 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="inline-flex items-center justify-center gap-3 text-[15px] tracking-[0.02em] font-medium bg-brass text-white px-10 h-[52px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-medium bg-brass text-white px-8 h-[48px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
             무료 상담 신청
             <svg
@@ -139,7 +139,7 @@ export default function Hero() {
           </a>
           <a
             href="#about"
-            className="inline-flex items-center justify-center gap-3 text-[15px] tracking-[0.02em] font-medium text-white/80 border border-white/30 px-10 h-[52px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-medium text-white/80 border border-white/30 px-8 h-[48px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
             더 알아보기
           </a>
