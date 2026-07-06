@@ -72,15 +72,13 @@ export default function FoundersPage() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-28 items-start">
                 {/* Illustration */}
                 <FadeIn delay={0.1} className={i % 2 === 1 ? "lg:order-2" : ""}>
-                  <ImageReveal>
-                    <div className="bg-[#F5F0E8] flex items-center justify-center p-8 md:p-12">
-                      <img
-                        src={founder.image}
-                        alt={founder.name}
-                        className="w-full max-w-[320px] mx-auto"
-                      />
-                    </div>
-                  </ImageReveal>
+                  <div className="flex items-center justify-center">
+                    <img
+                      src={founder.image}
+                      alt={founder.name}
+                      className="w-full max-w-[360px] mx-auto"
+                    />
+                  </div>
                 </FadeIn>
 
                 {/* Info */}
