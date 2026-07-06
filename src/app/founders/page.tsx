@@ -74,13 +74,13 @@ export default function FoundersPage() {
                   <div>
                     {/* Photo */}
                     <ImageReveal className="mb-10 md:mb-12">
-                      <div
-                        className="aspect-[3/4] bg-cover bg-center bg-no-repeat"
-                        style={{
-                          backgroundImage: `url('${founder.image}')`,
-                          backgroundColor: founder.color,
-                        }}
-                      />
+                      <div className="aspect-[3/4] bg-[#F5F0E8] flex items-center justify-center">
+                        <img
+                          src={founder.image}
+                          alt={founder.name}
+                          className="w-full h-full object-contain"
+                        />
+                      </div>
                     </ImageReveal>
 
                     {/* Name & Role */}
