@@ -11,6 +11,7 @@ const navLinks = [
   { label: "Space", href: "#space" },
   { label: "Workshop", href: "#workshop" },
   { label: "Vintage", href: "#vintage" },
+  { label: "Founders", href: "/founders" },
   { label: "Contact", href: "#contact" },
 ];
 
