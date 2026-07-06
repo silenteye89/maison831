@@ -14,7 +14,7 @@ const photos = [
 
 export default function InstagramGallery() {
   return (
-    <section className="py-24 md:py-32 px-6 md:px-10">
+    <section className="py-[100px] md:py-[120px] px-6 md:px-10">
       <div className="max-w-[1080px] mx-auto">
         <div className="text-center mb-10">
           <FadeIn>

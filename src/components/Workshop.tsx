@@ -8,7 +8,7 @@ export default function Workshop() {
   const activeWorkshops = workshops.filter((w) => w.active).slice(0, 4);
 
   return (
-    <section id="workshop" className="bg-ivory pt-40 pb-40 md:pt-52 md:pb-52 px-6 md:px-10">
+    <section id="workshop" className="bg-ivory py-[120px] md:py-[140px] px-6 md:px-10">
       <div className="max-w-[1080px] mx-auto">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 md:mb-20 gap-6">
           <div>
@@ -17,7 +17,7 @@ export default function Workshop() {
               <h2 className="font-serif text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] text-dark-brown tracking-[-0.025em]">일상에 영감을 더하다</h2>
             </FadeIn>
             <FadeIn delay={0.14}>
-              <p className="text-[15px] text-walnut mt-5 max-w-md leading-[1.75]">
+              <p className="text-[15px] text-walnut mt-5 max-w-md leading-[1.8]">
                 위스키 클래스, 브랜딩 클래스, 취미 클래스 등 다양한 원데이 클래스를 경험해보세요.
               </p>
             </FadeIn>

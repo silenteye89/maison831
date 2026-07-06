@@ -12,7 +12,7 @@ const collections = [
 
 export default function VintageCollection() {
   return (
-    <section id="vintage" className="bg-dark-brown pt-40 pb-40 md:pt-52 md:pb-52 px-6 md:px-10">
+    <section id="vintage" className="bg-dark-brown py-[120px] md:py-[140px] px-6 md:px-10">
       <div className="max-w-[1080px] mx-auto">
         <div className="text-center mb-16 md:mb-20">
           <FadeIn><p className="text-[12px] tracking-[0.15em] uppercase text-stone/40 mb-8">Vintage Collection</p></FadeIn>
@@ -20,7 +20,7 @@ export default function VintageCollection() {
             <h2 className="font-serif text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] text-ivory tracking-[-0.025em] mb-5">Vintage Collection</h2>
           </FadeIn>
           <FadeIn delay={0.14}>
-            <p className="text-[15px] text-stone/50 max-w-lg mx-auto leading-[1.75]">
+            <p className="text-[15px] text-stone/50 max-w-lg mx-auto leading-[1.8]">
               유럽 각지에서 직접 큐레이션한 빈티지 의류, 앤틱 가구, 유럽 소품. 시간이 만들어낸 고유의 아름다움을 발견하세요.
             </p>
           </FadeIn>

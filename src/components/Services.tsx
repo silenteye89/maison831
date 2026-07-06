@@ -12,7 +12,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-ivory pt-40 pb-40 md:pt-52 md:pb-52 px-6 md:px-10">
+    <section id="services" className="bg-ivory py-[120px] md:py-[140px] px-6 md:px-10">
       <div className="max-w-[1080px] mx-auto">
         <div className="text-center mb-16 md:mb-20">
           <FadeIn>
@@ -25,18 +25,18 @@ export default function Services() {
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-stone/8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           {services.map((s, i) => (
             <FadeIn key={s.number} delay={i * 0.08}>
               <motion.a
                 href={s.href}
-                className="group block bg-ivory p-8 md:p-10 hover:bg-cream/30 transition-colors duration-400"
+                className="group block border border-stone/8 p-8 md:p-10 hover:bg-ivory/60 transition-colors duration-300"
                 whileHover={{ x: 3 }}
                 transition={{ duration: 0.3 }}
               >
                 <p className="text-[12px] tracking-[0.15em] uppercase text-oak/40 mb-2">{s.subtitle}</p>
                 <h3 className="font-serif text-[20px] md:text-[22px] text-dark-brown mb-5 group-hover:text-brass transition-colors duration-300 tracking-[-0.01em]">{s.title}</h3>
-                <p className="text-[15px] leading-[1.75] text-walnut mb-6 max-w-md">{s.description}</p>
+                <p className="text-[15px] leading-[1.8] text-walnut mb-6 max-w-md">{s.description}</p>
                 <span className="inline-flex items-center gap-1.5 text-[11px] tracking-[0.1em] uppercase text-oak/35 group-hover:text-brass transition-colors duration-300">
                   자세히 보기
                   <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>

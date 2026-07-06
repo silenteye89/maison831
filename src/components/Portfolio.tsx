@@ -16,7 +16,7 @@ const projects = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="pt-40 pb-40 md:pt-52 md:pb-52 px-6 md:px-10">
+    <section id="portfolio" className="py-[120px] md:py-[140px] px-6 md:px-10">
       <div className="max-w-[1080px] mx-auto">
         <div className="text-center mb-16 md:mb-20">
           <FadeIn>
@@ -26,7 +26,7 @@ export default function Portfolio() {
             <h2 className="font-serif text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] text-dark-brown tracking-[-0.025em] mb-5">Selected Work</h2>
           </FadeIn>
           <FadeIn delay={0.14}>
-            <p className="text-[15px] text-walnut max-w-[480px] mx-auto leading-[1.75]">
+            <p className="text-[15px] text-walnut max-w-[480px] mx-auto leading-[1.8]">
               브랜드를 이해하고, 기술로 완성합니다.<br />메종831이 만든 프로젝트를 소개합니다.
             </p>
           </FadeIn>
@@ -42,7 +42,7 @@ export default function Portfolio() {
                 <p className="text-[12px] tracking-[0.15em] uppercase text-oak/40 mb-4">{p.category}</p>
                 <h3 className="font-serif text-[22px] md:text-[26px] text-dark-brown mb-2 tracking-[-0.015em]">{p.title}</h3>
                 <p className="text-[14px] text-brass/70 mb-8">{p.subtitle}</p>
-                <p className="text-[15px] text-walnut leading-[1.75] mb-8 max-w-md">{p.description}</p>
+                <p className="text-[15px] text-walnut leading-[1.8] mb-8 max-w-md">{p.description}</p>
                 <div className="flex flex-wrap gap-2 mb-10">
                   {p.tags.map((t) => <span key={t} className="text-[11px] tracking-[0.06em] text-oak/35 border border-stone/12 px-3 py-1.5 rounded-sm">{t}</span>)}
                 </div>

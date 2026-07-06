@@ -23,7 +23,7 @@ const portfolio = [
 
 export default function WebDevelopment() {
   return (
-    <section id="development" className="pt-40 pb-40 md:pt-52 md:pb-52 px-6 md:px-10">
+    <section id="development" className="py-[120px] md:py-[140px] px-6 md:px-10">
       <div className="max-w-[1080px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start mb-16 md:mb-20">
           <div>
@@ -38,7 +38,7 @@ export default function WebDevelopment() {
           </div>
           <div className="lg:pt-14">
             <FadeIn delay={0.16}>
-              <p className="text-[15px] leading-[1.75] text-walnut max-w-[480px]">
+              <p className="text-[15px] leading-[1.8] text-walnut max-w-[480px]">
                 메종831 크리에이티브 스튜디오는 홈페이지 제작, 앱 개발,
                 브랜드 아이덴티티, UI/UX 디자인을 통해
                 당신의 브랜드에 디지털 생명력을 불어넣습니다.
@@ -53,7 +53,7 @@ export default function WebDevelopment() {
             <p className="font-serif text-[22px] sm:text-[26px] md:text-[30px] text-dark-brown leading-[1.25] tracking-[-0.02em] mb-6">
               카이스트 출신 엔지니어가<br className="hidden sm:block" />함께 직접 디자인하고 개발합니다.
             </p>
-            <p className="text-[15px] text-walnut max-w-md mx-auto leading-[1.75]">
+            <p className="text-[15px] text-walnut max-w-md mx-auto leading-[1.8]">
               최고 수준의 기술력과 섬세한 디자인 감각으로 단순한 웹사이트를 넘어, 브랜드를 경험하는 디지털 공간을 만듭니다.
             </p>
           </div>
