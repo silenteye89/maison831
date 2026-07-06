@@ -61,85 +61,87 @@ export default function Hero() {
       </AnimatePresence>
 
       {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/15 to-black/55 z-[1]" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/25 to-transparent z-[1]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60 z-[1]" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
-        {/* Decorative line */}
-        <motion.div
-          initial={{ scaleY: 0 }}
-          animate={{ scaleY: 1 }}
-          transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
-          className="w-[1px] h-12 bg-white/30 mb-10 origin-top"
-        />
-
         {/* Brand Name */}
         <div className="overflow-hidden">
-          <motion.h1
-            initial={{ y: "100%" }}
-            animate={{ y: 0 }}
-            transition={{ duration: 1, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
-            className="font-serif text-5xl sm:text-7xl md:text-8xl lg:text-[7rem] text-white tracking-[0.18em] font-light"
-          >
-            MAISON 831
-          </motion.h1>
-        </div>
-
-        {/* Slogan */}
-        <div className="overflow-hidden mt-8">
           <motion.div
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
-            transition={{ duration: 0.8, delay: 1.1, ease: [0.25, 0.4, 0.25, 1] }}
-            className="flex items-center gap-4 sm:gap-6"
+            transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
+            className="flex items-center gap-4 mb-4"
           >
-            {["Create.", "Gather.", "Experience."].map((word, i) => (
-              <span
-                key={word}
-                className="font-serif text-lg sm:text-xl md:text-2xl text-white/85 italic font-light tracking-wide"
-                style={{ animationDelay: `${i * 0.15}s` }}
-              >
-                {word}
-              </span>
-            ))}
+            <span className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center border border-white/50 font-serif text-xl sm:text-2xl text-white font-light">
+              M
+            </span>
+            <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl text-white tracking-[0.18em] font-light">
+              MAISON 831
+            </h1>
           </motion.div>
         </div>
 
-        {/* Subtitle */}
-        <div className="overflow-hidden mt-4">
+        {/* Tagline */}
+        <div className="overflow-hidden mb-8">
           <motion.p
             initial={{ y: "100%" }}
             animate={{ y: 0 }}
-            transition={{ duration: 0.8, delay: 1.3, ease: [0.25, 0.4, 0.25, 1] }}
-            className="text-white/55 text-[10px] sm:text-[11px] tracking-[0.35em] uppercase font-light"
+            transition={{ duration: 0.8, delay: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
+            className="text-white/70 text-sm sm:text-base tracking-[0.08em] font-light"
           >
-            Curated Lifestyle Studio
+            일과 취향, 브랜드와 사람, 기술과 공간을 연결합니다.
           </motion.p>
         </div>
 
-        {/* CTA */}
+        {/* Divider */}
+        <motion.div
+          initial={{ scaleX: 0 }}
+          animate={{ scaleX: 1 }}
+          transition={{ duration: 0.8, delay: 1.0 }}
+          className="w-16 h-[1px] bg-brass/60 mb-8 origin-center"
+        />
+
+        {/* Phone Number - Large */}
+        <div className="overflow-hidden mb-10">
+          <motion.a
+            href="tel:010-8687-2129"
+            initial={{ y: "100%" }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.8, delay: 1.1, ease: [0.25, 0.4, 0.25, 1] }}
+            className="block font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white tracking-[0.05em] font-light hover:text-brass transition-colors duration-500"
+          >
+            010-8687-2129
+          </motion.a>
+        </div>
+
+        {/* CTA Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 1.7 }}
-          className="mt-14"
+          transition={{ duration: 0.8, delay: 1.4 }}
+          className="flex flex-col sm:flex-row items-center gap-4"
         >
           <a
-            href="#about"
-            className="group relative inline-flex items-center justify-center gap-4 text-white/90 text-[15px] tracking-[0.02em] font-medium border border-white/30 px-8 h-[50px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+            href="#contact"
+            className="inline-flex items-center justify-center gap-3 text-[15px] tracking-[0.02em] font-medium bg-brass text-white px-10 h-[52px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Explore
+            무료 상담 신청
             <svg
-              className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-500"
+              className="w-4 h-4"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={1}
+              strokeWidth={1.5}
             >
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-            &nbsp;&nbsp;&nbsp;
+          </a>
+          <a
+            href="#about"
+            className="inline-flex items-center justify-center gap-3 text-[15px] tracking-[0.02em] font-medium text-white/80 border border-white/30 px-10 h-[52px] rounded-full hover:bg-white hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+          >
+            더 알아보기
           </a>
         </motion.div>
       </div>
