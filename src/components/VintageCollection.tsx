@@ -12,51 +12,41 @@ const collections = [
 
 export default function VintageCollection() {
   return (
-    <section id="vintage" className="bg-dark-brown pt-[120px] pb-[140px] md:pt-[140px] md:pb-[160px] px-6 md:px-12">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="vintage" className="bg-dark-brown pt-[180px] pb-[200px] md:pt-[220px] md:pb-[260px] px-6 md:px-12">
+      <div className="max-w-[960px] mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-14">
+        <div className="text-center mb-20 md:mb-28">
           <FadeIn>
-            <p className="text-[13px] tracking-[0.2em] uppercase text-stone mb-10 md:mb-14">
+            <p className="text-[13px] tracking-[0.2em] uppercase text-stone/50 mb-12 md:mb-16">
               Vintage Collection
             </p>
           </FadeIn>
           <FadeIn delay={0.1}>
-            <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-ivory font-normal tracking-[-0.02em] leading-[1.2] mb-6">
+            <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-ivory font-medium tracking-[-0.02em] leading-[1.2] mb-8">
               Vintage Collection
             </h2>
           </FadeIn>
           <FadeIn delay={0.2}>
-            <p className="text-base text-stone max-w-lg mx-auto leading-[1.85]">
+            <p className="text-[16px] text-stone/60 font-light max-w-lg mx-auto leading-[1.8]">
               유럽 각지에서 직접 큐레이션한 빈티지 의류, 앤틱 가구, 유럽 소품.
               시간이 만들어낸 고유의 아름다움을 발견하세요.
             </p>
           </FadeIn>
         </div>
 
-        {/* Lookbook Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-5">
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           {collections.map((item, i) => (
             <ImageReveal key={item.title} delay={i * 0.1}>
-              <motion.div
-                className="relative group cursor-pointer overflow-hidden"
-                whileHover="hover"
-              >
+              <motion.div className="relative group cursor-pointer overflow-hidden">
                 <div
                   className="aspect-[3/4] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
-                  style={{
-                    backgroundImage: `url('${item.src}')`,
-                    backgroundColor: item.color,
-                  }}
+                  style={{ backgroundImage: `url('${item.src}')`, backgroundColor: item.color }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-                <div className="absolute bottom-0 left-0 right-0 p-7 md:p-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
-                  <p className="text-[12px] tracking-[0.2em] uppercase text-white/70 mb-1.5">
-                    {item.category}
-                  </p>
-                  <h3 className="font-serif text-[22px] md:text-[26px] text-white font-normal tracking-[-0.01em]">
-                    {item.title}
-                  </h3>
+                <div className="absolute bottom-0 left-0 right-0 p-8 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-700">
+                  <p className="text-[12px] tracking-[0.2em] uppercase text-white/60 mb-2">{item.category}</p>
+                  <h3 className="font-serif text-[22px] md:text-[26px] text-white font-medium tracking-[-0.01em]">{item.title}</h3>
                 </div>
               </motion.div>
             </ImageReveal>
@@ -64,10 +54,10 @@ export default function VintageCollection() {
         </div>
 
         {/* CTA */}
-        <FadeIn delay={0.3} className="text-center mt-16">
+        <FadeIn delay={0.3} className="text-center mt-20 md:mt-24">
           <a
             href="#contact"
-            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-medium text-ivory/90 border border-ivory/30 px-8 h-[48px] rounded-full hover:bg-ivory hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-normal text-ivory/85 border border-ivory/20 px-8 h-[48px] rounded-full hover:bg-ivory hover:text-dark-brown hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
             View Collection
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>

@@ -23,38 +23,33 @@ const features = [
 ];
 
 const usages = [
-  { label: "회의" },
-  { label: "촬영" },
-  { label: "인터뷰" },
-  { label: "클래스" },
-  { label: "소모임" },
-  { label: "파티룸" },
-  { label: "스터디" },
+  { label: "회의" }, { label: "촬영" }, { label: "인터뷰" }, { label: "클래스" },
+  { label: "소모임" }, { label: "파티룸" }, { label: "스터디" },
 ];
 
 export default function OurSpace() {
   return (
-    <section id="space" className="pt-[120px] pb-[140px] md:pt-[140px] md:pb-[160px] px-6 md:px-12">
-      <div className="max-w-[1200px] mx-auto">
+    <section id="space" className="pt-[180px] pb-[200px] md:pt-[220px] md:pb-[260px] px-6 md:px-12">
+      <div className="max-w-[960px] mx-auto">
         {/* Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 mb-12 md:mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-20 md:mb-28">
           <div>
             <FadeIn>
-              <p className="text-[13px] tracking-[0.2em] uppercase text-oak mb-10 md:mb-14">
+              <p className="text-[13px] tracking-[0.2em] uppercase text-stone/60 mb-12 md:mb-16">
                 Curated Space
               </p>
             </FadeIn>
             <FadeIn delay={0.1}>
-              <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-dark-brown font-normal tracking-[-0.02em] leading-[1.2]">
+              <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-dark-brown font-medium tracking-[-0.02em] leading-[1.2]">
                 당신만의
                 <br />
                 특별한 순간을 위해
               </h2>
             </FadeIn>
           </div>
-          <div className="flex items-end">
+          <div className="lg:pt-16">
             <FadeIn delay={0.2}>
-              <p className="text-base leading-[1.85] text-walnut max-w-[520px]">
+              <p className="text-[16px] md:text-[17px] leading-[1.8] text-walnut font-light max-w-[480px]">
                 숲이 보이는 4m × 11m 통창 공간.
                 유럽 미장벽과 앤틱 가구, 오크 원목과 빈티지 조명이
                 어우러진 공간에서 따뜻한 햇살과 함께
@@ -65,73 +60,52 @@ export default function OurSpace() {
         </div>
 
         {/* Photo Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mb-24 md:mb-32">
           {spaceImages.map((img, i) => (
-            <ImageReveal
-              key={img.alt}
-              delay={i * 0.08}
-              className={i === 0 ? "col-span-2 row-span-2" : ""}
-            >
+            <ImageReveal key={img.alt} delay={i * 0.08} className={i === 0 ? "col-span-2 row-span-2" : ""}>
               <motion.div
                 className="relative overflow-hidden group cursor-pointer"
-                style={{
-                  height: i === 0 ? "500px" : "240px",
-                  minHeight: "180px",
-                }}
+                style={{ height: i === 0 ? "480px" : "230px", minHeight: "180px" }}
               >
                 <div
                   className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
-                  style={{
-                    backgroundImage: `url('${img.src}')`,
-                    backgroundColor: img.color,
-                  }}
+                  style={{ backgroundImage: `url('${img.src}')`, backgroundColor: img.color }}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-700" />
                 <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-700">
-                  <p className="text-white text-[12px] tracking-[0.15em] uppercase">
-                    {img.caption}
-                  </p>
+                  <p className="text-white text-[12px] tracking-[0.15em] uppercase">{img.caption}</p>
                 </div>
               </motion.div>
             </ImageReveal>
           ))}
         </div>
 
-        {/* Space Features */}
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 mb-10">
-          {features.map((feature, i) => (
-            <FadeIn key={feature.label} delay={i * 0.05}>
+        {/* Features */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 mb-16">
+          {features.map((f, i) => (
+            <FadeIn key={f.label} delay={i * 0.05}>
               <div className="py-6 text-center">
-                <p className="text-[12px] tracking-[0.15em] uppercase text-oak mb-1">
-                  {feature.detail}
-                </p>
-                <p className="font-serif text-[16px] text-dark-brown">
-                  {feature.label}
-                </p>
+                <p className="text-[12px] tracking-[0.15em] uppercase text-stone/45 mb-1.5">{f.detail}</p>
+                <p className="font-serif text-[16px] text-dark-brown font-medium">{f.label}</p>
               </div>
             </FadeIn>
           ))}
         </div>
 
-        {/* Usage Types */}
+        {/* Usages */}
         <FadeIn delay={0.2}>
-          <div className="flex flex-wrap justify-center gap-2.5 md:gap-3 mb-10">
-            {usages.map((usage) => (
-              <span
-                key={usage.label}
-                className="text-[13px] tracking-[0.06em] text-walnut border border-stone/18 px-4 py-2"
-              >
-                {usage.label}
-              </span>
+          <div className="flex flex-wrap justify-center gap-2.5 md:gap-3">
+            {usages.map((u) => (
+              <span key={u.label} className="text-[13px] tracking-[0.06em] text-walnut/70 font-light border border-stone/12 px-4 py-2">{u.label}</span>
             ))}
           </div>
         </FadeIn>
 
         {/* CTA */}
-        <FadeIn delay={0.3} className="text-center mt-16">
+        <FadeIn delay={0.3} className="text-center mt-20 md:mt-24">
           <Link
             href="/reserve?type=space"
-            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-medium bg-dark-brown text-ivory px-8 h-[48px] rounded-full hover:bg-brass hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
+            className="inline-flex items-center justify-center gap-3 text-[14px] tracking-[0.02em] font-normal bg-dark-brown text-ivory px-8 h-[48px] rounded-full hover:bg-brass hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 ease-out"
           >
             공간 예약하기
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
