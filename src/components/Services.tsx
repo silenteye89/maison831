@@ -12,53 +12,35 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-ivory pt-[180px] pb-[200px] md:pt-[220px] md:pb-[260px] px-6 md:px-12">
-      <div className="max-w-[960px] mx-auto">
-        {/* Header */}
-        <div className="text-center mb-20 md:mb-28">
+    <section id="services" className="bg-ivory pt-40 pb-40 md:pt-52 md:pb-52 px-6 md:px-10">
+      <div className="max-w-[1080px] mx-auto">
+        <div className="text-center mb-16 md:mb-20">
           <FadeIn>
-            <p className="text-[13px] tracking-[0.2em] uppercase text-stone/70 mb-12 md:mb-16">
-              Our Services
-            </p>
+            <p className="text-[12px] tracking-[0.15em] uppercase text-oak/50 mb-8">Our Services</p>
           </FadeIn>
-          <FadeIn delay={0.1}>
-            <h2 className="font-serif text-[26px] sm:text-[30px] md:text-[34px] lg:text-[38px] text-dark-brown font-medium tracking-[-0.02em] leading-[1.2]">
+          <FadeIn delay={0.08}>
+            <h2 className="font-serif text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] text-dark-brown tracking-[-0.025em]">
               무엇을 만들어 드릴까요
             </h2>
           </FadeIn>
         </div>
 
-        {/* Service Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-x-20 md:gap-y-20">
-          {services.map((service, i) => (
-            <FadeIn key={service.number} delay={i * 0.1}>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-stone/8">
+          {services.map((s, i) => (
+            <FadeIn key={s.number} delay={i * 0.08}>
               <motion.a
-                href={service.href}
-                className="group block relative"
-                whileHover={{ x: 4 }}
-                transition={{ duration: 0.4 }}
+                href={s.href}
+                className="group block bg-ivory p-8 md:p-10 hover:bg-cream/30 transition-colors duration-400"
+                whileHover={{ x: 3 }}
+                transition={{ duration: 0.3 }}
               >
-                <span className="font-serif text-6xl font-light absolute -top-2 right-0 opacity-[0.04]" style={{ color: service.accent }}>
-                  {service.number}
+                <p className="text-[12px] tracking-[0.15em] uppercase text-oak/40 mb-2">{s.subtitle}</p>
+                <h3 className="font-serif text-[20px] md:text-[22px] text-dark-brown mb-5 group-hover:text-brass transition-colors duration-300 tracking-[-0.01em]">{s.title}</h3>
+                <p className="text-[15px] leading-[1.75] text-walnut mb-6 max-w-md">{s.description}</p>
+                <span className="inline-flex items-center gap-1.5 text-[11px] tracking-[0.1em] uppercase text-oak/35 group-hover:text-brass transition-colors duration-300">
+                  자세히 보기
+                  <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}><path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                 </span>
-                <div className="relative">
-                  <p className="text-[13px] tracking-[0.2em] uppercase text-stone/60 mb-3">
-                    {service.subtitle}
-                  </p>
-                  <h3 className="font-serif text-[22px] md:text-[26px] text-dark-brown mb-8 group-hover:text-brass transition-colors duration-500 tracking-[-0.01em] leading-[1.3] font-medium">
-                    {service.title}
-                  </h3>
-                  <p className="text-[16px] leading-[1.8] text-walnut font-light mb-10 max-w-md">
-                    {service.description}
-                  </p>
-                  <span className="inline-flex items-center gap-2 text-[12px] tracking-[0.12em] uppercase text-stone/60 group-hover:text-brass transition-colors duration-500">
-                    자세히 보기
-                    <svg className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                  </span>
-                  <div className="w-full h-px bg-stone/10 mt-10" />
-                </div>
               </motion.a>
             </FadeIn>
           ))}

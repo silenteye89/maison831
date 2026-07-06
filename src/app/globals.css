@@ -40,10 +40,10 @@ body {
   color: var(--color-dark-brown);
   font-family: var(--font-sans);
   overflow-x: hidden;
-  letter-spacing: -0.01em;
-  line-height: 1.75;
-  font-size: 16px;
-  font-weight: 300;
+  letter-spacing: -0.008em;
+  line-height: 1.7;
+  font-size: 15px;
+  font-weight: 350;
 }
 
 ::selection {
@@ -52,33 +52,32 @@ body {
 }
 
 section {
-  scroll-margin-top: 80px;
+  scroll-margin-top: 64px;
 }
 
 p + p {
-  margin-top: 1.6em;
+  margin-top: 1.4em;
 }
 
 h1, h2, h3, h4 {
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-  margin-bottom: 0;
-  font-weight: 500;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+  font-weight: 450;
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-off-white);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-stone);
-  border-radius: 3px;
+  background: var(--color-beige);
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-oak);
+  background: var(--color-stone);
 }

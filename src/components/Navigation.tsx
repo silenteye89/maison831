@@ -17,149 +17,103 @@ const navLinks = [
 ];
 
 export default function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setScrolled(window.scrollY > 60);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isMobileMenuOpen]);
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
 
-  const navTextColor = isHome
-    ? isScrolled ? "text-dark-brown/70" : "text-white/80"
-    : "text-dark-brown/70";
-
-  const logoColor = isHome
-    ? isScrolled ? "text-dark-brown" : "text-white"
-    : "text-dark-brown";
-
-  const logoBorder = isHome
-    ? isScrolled ? "border-dark-brown/30" : "border-white/40"
-    : "border-dark-brown/30";
-
-  const navBg = isHome
-    ? isScrolled
-      ? "bg-warm-white/92 backdrop-blur-md shadow-[0_1px_0_rgba(196,181,158,0.15)]"
-      : "bg-transparent"
-    : "bg-warm-white/92 backdrop-blur-md shadow-[0_1px_0_rgba(196,181,158,0.15)]";
+  const solid = !isHome || scrolled;
 
   return (
     <>
       <motion.nav
-        initial={{ y: -100 }}
+        initial={{ y: -64 }}
         animate={{ y: 0 }}
-        transition={{ duration: 0.8, delay: isHome ? 1.5 : 0.3, ease: [0.25, 0.4, 0.25, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${navBg}`}
+        transition={{ duration: 0.6, delay: isHome ? 1.2 : 0.2, ease: [0.22, 1, 0.36, 1] }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          solid ? "bg-warm-white/95 backdrop-blur-lg border-b border-stone/8" : "bg-transparent"
+        }`}
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-20">
-          <a
-            href="/"
-            className={`flex items-center gap-3 transition-colors duration-500 ${logoColor}`}
-          >
-            <span className={`w-9 h-9 flex items-center justify-center border font-serif text-lg font-light tracking-wide transition-colors duration-500 ${logoBorder}`}>
+        <div className="max-w-[1080px] mx-auto px-6 md:px-10 flex items-center justify-between h-16">
+          <a href="/" className={`flex items-center gap-2.5 transition-colors duration-400 ${solid ? "text-dark-brown" : "text-white"}`}>
+            <span className={`w-8 h-8 flex items-center justify-center border font-serif text-[15px] tracking-wide transition-colors duration-400 ${solid ? "border-dark-brown/20" : "border-white/35"}`}>
               M
             </span>
-            <span className="font-serif text-sm tracking-[0.25em] hidden sm:inline">
-              MAISON 831
-            </span>
+            <span className="font-serif text-[13px] tracking-[0.2em] hidden sm:inline">MAISON 831</span>
           </a>
 
-          {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
                 href={link.href}
-                className={`text-[10px] tracking-[0.15em] uppercase transition-colors duration-500 hover:text-brass ${navTextColor}`}
+                className={`text-[11px] tracking-[0.12em] uppercase transition-colors duration-300 hover:text-brass ${solid ? "text-dark-brown/55" : "text-white/70"}`}
               >
                 {link.label}
               </a>
             ))}
           </div>
 
-          {/* Mobile Menu Button */}
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden relative w-8 h-8 flex flex-col items-center justify-center gap-1.5"
-            aria-label="Toggle menu"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden relative w-7 h-7 flex flex-col items-center justify-center gap-[5px]"
+            aria-label="Menu"
           >
-            <motion.span
-              animate={isMobileMenuOpen ? { rotate: 45, y: 5 } : { rotate: 0, y: 0 }}
-              className={`w-6 h-[1px] block transition-colors duration-500 ${
-                isMobileMenuOpen ? "bg-dark-brown" : isHome && !isScrolled ? "bg-white" : "bg-dark-brown"
-              }`}
-            />
-            <motion.span
-              animate={isMobileMenuOpen ? { opacity: 0 } : { opacity: 1 }}
-              className={`w-6 h-[1px] block transition-colors duration-500 ${
-                isMobileMenuOpen ? "bg-dark-brown" : isHome && !isScrolled ? "bg-white" : "bg-dark-brown"
-              }`}
-            />
-            <motion.span
-              animate={isMobileMenuOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
-              className={`w-6 h-[1px] block transition-colors duration-500 ${
-                isMobileMenuOpen ? "bg-dark-brown" : isHome && !isScrolled ? "bg-white" : "bg-dark-brown"
-              }`}
-            />
+            {[0, 1, 2].map((n) => (
+              <motion.span
+                key={n}
+                animate={
+                  menuOpen
+                    ? n === 0 ? { rotate: 45, y: 6 } : n === 1 ? { opacity: 0 } : { rotate: -45, y: -6 }
+                    : { rotate: 0, y: 0, opacity: 1 }
+                }
+                className={`w-5 h-[1px] block ${menuOpen || solid ? "bg-dark-brown" : "bg-white"}`}
+              />
+            ))}
           </button>
         </div>
       </motion.nav>
 
-      {/* Mobile Menu Overlay */}
       <AnimatePresence>
-        {isMobileMenuOpen && (
+        {menuOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.35 }}
             className="fixed inset-0 z-40 bg-warm-white flex flex-col items-center justify-center"
           >
-            <div className="flex flex-col items-center gap-8">
+            <div className="flex flex-col items-center gap-7">
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.label}
                   href={link.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  initial={{ opacity: 0, y: 20 }}
+                  onClick={() => setMenuOpen(false)}
+                  initial={{ opacity: 0, y: 16 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ delay: i * 0.05, duration: 0.4 }}
-                  className="font-serif text-3xl text-dark-brown tracking-[0.1em] hover:text-brass transition-colors"
+                  exit={{ opacity: 0 }}
+                  transition={{ delay: i * 0.04, duration: 0.35 }}
+                  className="font-serif text-[26px] text-dark-brown tracking-[0.06em] hover:text-brass transition-colors duration-300"
                 >
                   {link.label}
                 </motion.a>
               ))}
             </div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-              className="absolute bottom-12 text-center"
-            >
-              <p className="text-[10px] tracking-[0.2em] uppercase text-stone">
-                010-8687-2129
-              </p>
-              <p className="text-[10px] tracking-[0.15em] text-stone/60 mt-2">
-                @maison831.kr
-              </p>
-            </motion.div>
+            <div className="absolute bottom-10 text-center">
+              <p className="text-[11px] tracking-[0.15em] uppercase text-stone">010-8687-2129</p>
+              <p className="text-[11px] tracking-[0.1em] text-stone/50 mt-1.5">@maison831.kr</p>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
