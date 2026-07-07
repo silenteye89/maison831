@@ -67,7 +67,7 @@ export default function NewArrivalsSection() {
   const popularItems = services.filter((s) => s.isPopular);
 
   return (
-    <section className="py-24 md:py-32 bg-ivory">
+    <section id="space" className="py-24 md:py-32 bg-ivory">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <AnimatedText
           as="p"

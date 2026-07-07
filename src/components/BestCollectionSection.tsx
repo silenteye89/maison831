@@ -35,7 +35,7 @@ const areas = [
 
 export default function BestCollectionSection() {
   return (
-    <section className="py-24 md:py-32 bg-off-white">
+    <section id="web" className="py-24 md:py-32 bg-off-white">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <AnimatedText
           as="p"

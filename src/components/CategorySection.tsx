@@ -37,7 +37,7 @@ export default function CategorySection() {
   const activeCat = categories.find((c) => c.id === activeTab);
 
   return (
-    <section id="categories" className="py-24 md:py-32 bg-warm-white">
+    <section id="class" className="py-24 md:py-32 bg-warm-white">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <AnimatedText
           as="p"

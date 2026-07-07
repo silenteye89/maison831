@@ -10,7 +10,7 @@ const gridImages = [
 
 export default function VintageStylingSection() {
   return (
-    <section id="space" className="py-24 md:py-32 bg-off-white">
+    <section id="vintage" className="py-24 md:py-32 bg-off-white">
       <div className="max-w-6xl mx-auto px-6 md:px-10">
         <AnimatedText
           as="p"
