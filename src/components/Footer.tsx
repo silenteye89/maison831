@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="block mb-4">
               <span className="font-serif text-xl tracking-[0.15em] text-warm-white">
-                MAISON 831
+                MAISON831
               </span>
             </Link>
             <p className="text-[10px] tracking-[0.2em] uppercase text-stone/60 mb-4">
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-stone/15 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[11px] text-stone/40 tracking-wider">
-            &copy; 2026 Maison 831. All rights reserved.
+            &copy; 2026 Maison831. All rights reserved.
           </p>
           <p className="text-[11px] text-stone/40 tracking-wider">
             대전광역시 유성구 어은동 831 | 사업자등록번호 000-00-00000

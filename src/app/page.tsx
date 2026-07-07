@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="lg:ml-[220px] overflow-x-hidden">
+      <main className="overflow-x-hidden">
         <HeroSection />
         <AboutSection />
         <BestCollectionSection />
@@ -27,7 +27,7 @@ export default function Home() {
         <ShowroomSection />
         <ContactSection />
       </main>
-      <footer className="lg:ml-[220px]">
+      <footer>
         <Footer />
       </footer>
     </>

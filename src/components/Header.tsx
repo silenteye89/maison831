@@ -74,6 +74,7 @@ const footerVariants = {
 export default function Header() {
   const [activeSection, setActiveSection] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const menuRef = useRef<HTMLElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const triggerButtonRef = useRef<HTMLButtonElement>(null);
@@ -103,6 +104,16 @@ export default function Header() {
     const cleanup = handleObserver();
     return cleanup;
   }, [handleObserver]);
+
+  // Scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Scroll lock
   useEffect(() => {
@@ -154,7 +165,6 @@ export default function Header() {
 
     document.addEventListener("keydown", handleKeyDown);
 
-    // Focus close button on open
     requestAnimationFrame(() => {
       closeButtonRef.current?.focus();
     });
@@ -169,64 +179,76 @@ export default function Header() {
 
   return (
     <>
-      {/* Desktop Sidebar */}
-      <nav
-        className="hidden lg:flex fixed left-0 top-0 h-screen w-[220px] bg-dark-brown flex-col justify-between z-50 py-10 px-8"
-        aria-label="Desktop navigation"
+      {/* Top Navigation Bar — all breakpoints */}
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled
+            ? "bg-dark-brown/95 backdrop-blur-md shadow-[0_1px_0_rgba(196,181,158,0.1)]"
+            : "bg-transparent"
+        }`}
       >
-        <div>
-          <Link href="/" className="block mb-1">
-            <span className="font-serif text-2xl tracking-[0.15em] text-warm-white">
+        <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 h-[64px] md:h-[72px]">
+          {/* Logo */}
+          <Link href="/" className="flex items-baseline gap-1.5 group">
+            <span
+              className={`font-serif text-[18px] md:text-[20px] tracking-[0.18em] transition-colors duration-500 ${
+                scrolled ? "text-warm-white" : "text-dark-brown"
+              }`}
+            >
               MAISON
             </span>
-            <br />
-            <span className="font-serif text-4xl tracking-[0.15em] text-warm-white font-light">
+            <span
+              className={`font-serif text-[22px] md:text-[24px] tracking-[0.12em] font-light transition-colors duration-500 ${
+                scrolled ? "text-warm-white" : "text-dark-brown"
+              }`}
+            >
               831
             </span>
           </Link>
-          <p className="text-[10px] tracking-[0.25em] text-stone mt-3 uppercase">
-            Tech meets Aesthetic
-          </p>
-        </div>
 
-        <ul className="space-y-1">
-          {navLinks.map((link) => {
-            const sectionId = link.href.replace("#", "");
-            const isActive = activeSection === sectionId;
-            return (
-              <li key={link.href}>
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-8" aria-label="Main navigation">
+            {navLinks.map((link) => {
+              const sectionId = link.href.replace("#", "");
+              const isActive = activeSection === sectionId;
+              return (
                 <a
+                  key={link.href}
                   href={link.href}
-                  className={`block py-2 text-[13px] tracking-[0.08em] transition-colors duration-300 ${
+                  className={`relative text-[12px] tracking-[0.1em] uppercase transition-all duration-300 py-1 ${
                     isActive
-                      ? "text-brass font-medium"
-                      : "text-stone hover:text-warm-white"
+                      ? scrolled
+                        ? "text-brass font-medium"
+                        : "text-dark-brown font-medium"
+                      : scrolled
+                        ? "text-stone/80 hover:text-warm-white"
+                        : "text-walnut/60 hover:text-dark-brown"
                   }`}
                 >
                   {link.label}
+                  {isActive && (
+                    <motion.span
+                      layoutId="nav-indicator"
+                      className={`absolute -bottom-1 left-0 right-0 h-[1.5px] ${
+                        scrolled ? "bg-brass" : "bg-dark-brown"
+                      }`}
+                      transition={{ type: "spring", stiffness: 350, damping: 30 }}
+                    />
+                  )}
                 </a>
-              </li>
-            );
-          })}
-        </ul>
+              );
+            })}
+          </nav>
 
-        <div className="text-[10px] text-stone/60 tracking-wider">
-          &copy; 2026 Maison 831
-        </div>
-      </nav>
-
-      {/* Mobile Header Bar */}
-      <header className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-dark-brown/95 backdrop-blur-md">
-        <div className="flex items-center justify-between px-5 py-4">
-          <Link href="/" className="flex items-baseline gap-2">
-            <span className="font-serif text-lg tracking-[0.15em] text-warm-white">
-              MAISON 831
-            </span>
-          </Link>
+          {/* Mobile Hamburger */}
           <button
             ref={triggerButtonRef}
             onClick={() => setMobileOpen(true)}
-            className="text-warm-white p-2 -mr-2 rounded-sm transition-opacity duration-200 hover:opacity-70 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brass"
+            className={`lg:hidden p-2 -mr-2 rounded-sm transition-colors duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brass ${
+              scrolled
+                ? "text-warm-white hover:text-brass"
+                : "text-dark-brown hover:text-walnut"
+            }`}
             aria-label="Open menu"
             aria-expanded={mobileOpen}
             aria-controls="mobile-menu"
@@ -364,7 +386,7 @@ export default function Header() {
               >
                 <div className="border-t border-stone/15 pt-6">
                   <p className="text-[10px] text-stone/40 tracking-[0.2em] uppercase">
-                    &copy; 2026 Maison 831
+                    &copy; 2026 Maison831
                   </p>
                 </div>
               </motion.div>

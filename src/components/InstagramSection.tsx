@@ -43,7 +43,7 @@ export default function InstagramSection() {
               >
                 <img
                   src={src}
-                  alt={`Maison 831 Instagram ${(i % images.length) + 1}`}
+                  alt={`Maison831 Instagram ${(i % images.length) + 1}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                 />
               </div>

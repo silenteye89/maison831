@@ -18,7 +18,7 @@ export async function generateMetadata({
   const service = services.find((s) => s.id === id);
   if (!service) return { title: "Not Found" };
   return {
-    title: `${service.nameKr} — Maison 831`,
+    title: `${service.nameKr} — Maison831`,
     description: service.descriptionKr,
   };
 }
@@ -41,10 +41,10 @@ export default async function ServicePage({
   return (
     <>
       <Header />
-      <main className="lg:ml-[220px]">
+      <main className="pt-[72px]">
         <ServiceDetailClient service={service} cat={cat} related={related} />
       </main>
-      <footer className="lg:ml-[220px]">
+      <footer>
         <Footer />
       </footer>
     </>

@@ -19,7 +19,7 @@ export default function AboutSection() {
             <div className="relative">
               <img
                 src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1100&fit=crop&q=80"
-                alt="Maison 831 Studio Interior"
+                alt="Maison831 Studio Interior"
                 className="w-full aspect-[4/5] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-dark-brown/90 backdrop-blur-sm p-6 md:p-8">

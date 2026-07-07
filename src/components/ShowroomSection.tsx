@@ -8,7 +8,7 @@ export default function ShowroomSection() {
       {/* Full-bleed background */}
       <img
         src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1200&fit=crop&q=80"
-        alt="Maison 831 Showroom"
+        alt="Maison831 Showroom"
         className="absolute inset-0 w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-matte-black/30" />

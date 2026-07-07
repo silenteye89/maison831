@@ -131,7 +131,7 @@ export default function ContactSection() {
               <p className="text-[15px] text-walnut/80 leading-[1.9] mb-12 max-w-sm font-sans">
                 웹 개발, 공간 예약, 클래스, 빈티지 컬렉션, 브랜드 협업까지.
                 <br />
-                Maison 831과 함께할 모든 이야기를 기다립니다.
+                Maison831과 함께할 모든 이야기를 기다립니다.
               </p>
 
               <div className="space-y-6">
