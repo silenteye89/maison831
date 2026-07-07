@@ -184,10 +184,13 @@ export default function Header() {
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
           scrolled
             ? "bg-dark-brown/95 backdrop-blur-md shadow-[0_1px_0_rgba(196,181,158,0.1)]"
-            : "bg-transparent"
+            : "bg-gradient-to-b from-matte-black/60 to-transparent"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 h-[64px] md:h-[72px]">
+        <div
+          className="max-w-[1400px] mx-auto flex items-center justify-between px-6 md:px-10 h-[64px] md:h-[72px]"
+          style={!scrolled ? { textShadow: "0 1px 8px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.3)" } : { textShadow: "none" }}
+        >
           {/* Logo */}
           <Link href="/" className="flex items-baseline gap-1.5 group">
             <span
