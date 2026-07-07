@@ -6,17 +6,17 @@ export default function HeroSection() {
   return (
     <section id="hero" className="min-h-screen flex flex-col lg:flex-row">
       {/* Left: Text */}
-      <div className="flex-1 flex items-center justify-center bg-ivory px-8 md:px-16 py-24 lg:py-0">
+      <div className="flex-1 flex items-center justify-center bg-ivory px-8 md:px-12 py-24 lg:py-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="max-w-md"
+          className="w-full max-w-md"
         >
           <p className="text-[11px] tracking-[0.3em] text-brass uppercase mb-6">
             Curation Lifestyle Studio
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.1] mb-4 text-dark-brown">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.1] mb-4 text-dark-brown">
             TECH MEETS
             <br />
             AESTHETIC
@@ -50,7 +50,7 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 0.3 }}
-        className="flex-1 relative min-h-[50vh] lg:min-h-screen"
+        className="flex-1 relative min-h-[50vh] lg:min-h-0"
       >
         <img
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1200&fit=crop&q=85"

@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="lg:ml-[220px]">
+      <main className="lg:ml-[220px] overflow-x-hidden">
         <HeroSection />
         <AboutSection />
         <BestCollectionSection />
