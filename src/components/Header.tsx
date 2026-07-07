@@ -192,14 +192,14 @@ export default function Header() {
           <Link href="/" className="flex items-baseline gap-1.5 group">
             <span
               className={`font-serif text-[18px] md:text-[20px] tracking-[0.18em] transition-colors duration-500 ${
-                scrolled ? "text-warm-white" : "text-dark-brown"
+                scrolled ? "text-warm-white" : "text-warm-white"
               }`}
             >
               MAISON
             </span>
             <span
               className={`font-serif text-[22px] md:text-[24px] tracking-[0.12em] font-light transition-colors duration-500 ${
-                scrolled ? "text-warm-white" : "text-dark-brown"
+                scrolled ? "text-warm-white" : "text-warm-white"
               }`}
             >
               831
@@ -217,12 +217,10 @@ export default function Header() {
                   href={link.href}
                   className={`relative text-[12px] tracking-[0.1em] uppercase transition-all duration-300 py-1 ${
                     isActive
-                      ? scrolled
-                        ? "text-brass font-medium"
-                        : "text-dark-brown font-medium"
+                      ? "text-brass font-medium"
                       : scrolled
                         ? "text-stone/80 hover:text-warm-white"
-                        : "text-walnut/60 hover:text-dark-brown"
+                        : "text-warm-white/70 hover:text-warm-white"
                   }`}
                 >
                   {link.label}
@@ -230,7 +228,7 @@ export default function Header() {
                     <motion.span
                       layoutId="nav-indicator"
                       className={`absolute -bottom-1 left-0 right-0 h-[1.5px] ${
-                        scrolled ? "bg-brass" : "bg-dark-brown"
+                        scrolled ? "bg-brass" : "bg-brass"
                       }`}
                       transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
@@ -247,7 +245,7 @@ export default function Header() {
             className={`lg:hidden p-2 -mr-2 rounded-sm transition-colors duration-300 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-brass ${
               scrolled
                 ? "text-warm-white hover:text-brass"
-                : "text-dark-brown hover:text-walnut"
+                : "text-warm-white hover:text-brass"
             }`}
             aria-label="Open menu"
             aria-expanded={mobileOpen}
