@@ -3,9 +3,9 @@
 import { AnimatedSection, AnimatedText } from "./AnimatedSection";
 
 const gridImages = [
-  { src: "/images/space-1.jpg", alt: "Studio main view", span: "md:col-span-2 md:row-span-2" },
-  { src: "/images/space-4.jpg", alt: "Antique furniture corner", span: "" },
-  { src: "/images/space-5.jpg", alt: "Forest view window", span: "" },
+  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=800&fit=crop&q=80", alt: "Studio main view", span: "md:col-span-2 md:row-span-2" },
+  { src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=400&h=400&fit=crop&q=80", alt: "Antique furniture corner", span: "" },
+  { src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=400&fit=crop&q=80", alt: "Forest view window", span: "" },
 ];
 
 export default function VintageStylingSection() {
@@ -63,14 +63,14 @@ export default function VintageStylingSection() {
             {/* Bottom right two */}
             <div className="relative aspect-square overflow-hidden">
               <img
-                src="/images/space-6.jpg"
+                src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=400&h=400&fit=crop&q=80"
                 alt="Studio detail"
                 className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />
             </div>
             <div className="relative aspect-square overflow-hidden">
               <img
-                src="/images/space-3.jpg"
+                src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop&q=80"
                 alt="Studio atmosphere"
                 className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               />

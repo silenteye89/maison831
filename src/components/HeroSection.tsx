@@ -53,7 +53,7 @@ export default function HeroSection() {
         className="flex-1 relative min-h-[50vh] lg:min-h-screen"
       >
         <img
-          src="/images/hero.jpg"
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1200&fit=crop&q=85"
           alt="Maison 831 Studio"
           className="absolute inset-0 w-full h-full object-cover"
         />

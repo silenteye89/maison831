@@ -72,7 +72,7 @@ function CustomSelect({
                   }}
                   className={`w-full text-left px-5 py-3 text-[14px] transition-colors duration-200 ${
                     value === opt.value
-                      ? "text-brass-gold bg-cream/40"
+                      ? "text-brass bg-cream/40"
                       : "text-walnut hover:bg-cream/30 hover:text-dark-brown"
                   }`}
                 >
@@ -116,19 +116,19 @@ export default function ContactSection() {
           <div>
             <AnimatedText
               as="p"
-              className="font-serif text-[11px] tracking-[0.3em] text-brass-gold uppercase mb-4"
+              className="font-serif text-[11px] tracking-[0.3em] text-brass uppercase mb-4"
             >
               Contact
             </AnimatedText>
             <AnimatedText
               as="h2"
-              className="font-serif text-3xl md:text-4xl text-charcoal tracking-[0.03em] mb-8"
+              className="font-serif text-3xl md:text-4xl text-dark-brown tracking-[0.03em] mb-8"
               delay={0.1}
             >
               문의하기
             </AnimatedText>
             <AnimatedSection delay={0.2}>
-              <p className="text-[15px] text-taupe leading-[1.9] mb-12 max-w-sm font-sans">
+              <p className="text-[15px] text-walnut/80 leading-[1.9] mb-12 max-w-sm font-sans">
                 웹 개발, 공간 예약, 클래스, 빈티지 컬렉션, 브랜드 협업까지.
                 <br />
                 Maison 831과 함께할 모든 이야기를 기다립니다.
@@ -139,7 +139,7 @@ export default function ContactSection() {
                   <p className="font-serif text-[10px] tracking-[0.2em] text-stone uppercase mb-1">
                     Email
                   </p>
-                  <a href="mailto:hello@maison831.com" className="text-[14px] text-charcoal hover:text-brass-gold transition-colors duration-300 font-sans">
+                  <a href="mailto:hello@maison831.com" className="text-[14px] text-dark-brown hover:text-brass transition-colors duration-300 font-sans">
                     hello@maison831.com
                   </a>
                 </div>
@@ -147,7 +147,7 @@ export default function ContactSection() {
                   <p className="font-serif text-[10px] tracking-[0.2em] text-stone uppercase mb-1">
                     Phone
                   </p>
-                  <a href="tel:042-831-0831" className="text-[14px] text-charcoal hover:text-brass-gold transition-colors duration-300 font-sans">
+                  <a href="tel:042-831-0831" className="text-[14px] text-dark-brown hover:text-brass transition-colors duration-300 font-sans">
                     042-831-0831
                   </a>
                 </div>
@@ -155,13 +155,13 @@ export default function ContactSection() {
                   <p className="font-serif text-[10px] tracking-[0.2em] text-stone uppercase mb-1">
                     KakaoTalk
                   </p>
-                  <p className="text-[14px] text-charcoal font-sans">@maison831</p>
+                  <p className="text-[14px] text-dark-brown font-sans">@maison831</p>
                 </div>
                 <div>
                   <p className="font-serif text-[10px] tracking-[0.2em] text-stone uppercase mb-1">
                     Address
                   </p>
-                  <p className="text-[14px] text-charcoal font-sans">
+                  <p className="text-[14px] text-dark-brown font-sans">
                     대전광역시 유성구 어은동 831
                   </p>
                 </div>
@@ -182,7 +182,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-charcoal font-sans placeholder-stone/40 focus:border-brass-gold focus:outline-none transition-colors duration-300"
+                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-dark-brown font-sans placeholder-stone/40 focus:border-brass focus:outline-none transition-colors duration-300"
                   placeholder="홍길동"
                 />
               </div>
@@ -196,7 +196,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-charcoal font-sans placeholder-stone/40 focus:border-brass-gold focus:outline-none transition-colors duration-300"
+                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-dark-brown font-sans placeholder-stone/40 focus:border-brass focus:outline-none transition-colors duration-300"
                   placeholder="hello@example.com"
                 />
               </div>
@@ -209,7 +209,7 @@ export default function ContactSection() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-charcoal font-sans placeholder-stone/40 focus:border-brass-gold focus:outline-none transition-colors duration-300"
+                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-dark-brown font-sans placeholder-stone/40 focus:border-brass focus:outline-none transition-colors duration-300"
                   placeholder="010-0000-0000"
                 />
               </div>
@@ -232,13 +232,13 @@ export default function ContactSection() {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-charcoal font-sans placeholder-stone/40 focus:border-brass-gold focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full bg-transparent border-b border-beige py-3 text-[14px] text-dark-brown font-sans placeholder-stone/40 focus:border-brass focus:outline-none transition-colors duration-300 resize-none"
                   placeholder="문의 내용을 적어주세요."
                 />
               </div>
               <button
                 type="submit"
-                className="bg-charcoal text-ivory px-10 py-3.5 font-serif text-[13px] tracking-[0.15em] hover:bg-antique-bronze transition-colors duration-500 w-full md:w-auto"
+                className="bg-dark-brown text-warm-white px-10 py-3.5 font-serif text-[13px] tracking-[0.15em] hover:bg-walnut transition-colors duration-500 w-full md:w-auto"
               >
                 SEND MESSAGE
               </button>

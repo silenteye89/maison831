@@ -8,22 +8,22 @@ import { services, categories } from "@/data/products";
 
 const categoryHero: Record<string, { image: string; description: string }> = {
   web: {
-    image: "/images/portfolio-2.jpg",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=1000&fit=crop",
     description:
       "KAIST 출신 엔지니어가 직접 디자인하고 개발합니다. 단순한 홈페이지가 아닌, 비즈니스 성장을 이끄는 디지털 솔루션을 제공합니다.",
   },
   space: {
-    image: "/images/space-3.jpg",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=1000&fit=crop",
     description:
       "4m×11m의 숲뷰 유럽 감성 스튜디오. 미장벽, 앤틱 가구, 오크 원목 바닥이 어우러진 공간에서 특별한 순간을 만들어 보세요.",
   },
   class: {
-    image: "/images/whisky.jpg",
+    image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&h=1000&fit=crop",
     description:
       "위스키 테이스팅부터 보태니컬 드로잉까지. 취향을 탐험하고 새로운 영감을 발견하는 원데이 클래스를 진행합니다.",
   },
   vintage: {
-    image: "/images/vintage.jpg",
+    image: "https://images.unsplash.com/photo-1558171813-01eda6b4ef0a?w=800&h=1000&fit=crop",
     description:
       "유럽 각지에서 직접 큐레이션해 온 빈티지 의류, 앤틱 가구, 소품 컬렉션. 세월이 만든 아름다움을 소유해 보세요.",
   },

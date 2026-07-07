@@ -18,7 +18,7 @@ export default function AboutSection() {
           <AnimatedSection>
             <div className="relative">
               <img
-                src="/images/space-1.jpg"
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1100&fit=crop&q=80"
                 alt="Maison 831 Studio Interior"
                 className="w-full aspect-[4/5] object-cover"
               />

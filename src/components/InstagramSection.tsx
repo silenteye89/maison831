@@ -3,12 +3,12 @@
 import { AnimatedSection } from "./AnimatedSection";
 
 const images = [
-  "/images/insta-1.jpg",
-  "/images/insta-2.jpg",
-  "/images/insta-3.jpg",
-  "/images/insta-4.jpg",
-  "/images/insta-5.jpg",
-  "/images/insta-6.jpg",
+  "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=400&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop",
+  "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&h=400&fit=crop",
 ];
 
 export default function InstagramSection() {

@@ -33,7 +33,7 @@ export const services: Service[] = [
     description: "A bespoke website tailored to your brand identity, built with modern frameworks for speed and elegance.",
     descriptionKr: "브랜드 아이덴티티에 맞춘 맞춤형 웹사이트. 모던 프레임워크로 속도와 우아함을 모두 갖추었습니다.",
     priceLabel: "3,000,000원~",
-    image: "/images/portfolio-1.jpg",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=1000&fit=crop",
     details: [
       "반응형 디자인 (모바일/태블릿/데스크톱)",
       "SEO 최적화 & 성능 튜닝",
@@ -52,7 +52,7 @@ export const services: Service[] = [
     description: "Full-featured online store with payment integration, inventory management, and beautiful product pages.",
     descriptionKr: "결제 연동, 재고 관리, 아름다운 상품 페이지를 갖춘 온라인 쇼핑몰을 제작합니다.",
     priceLabel: "5,000,000원~",
-    image: "/images/portfolio-2.jpg",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=1000&fit=crop",
     details: [
       "결제 시스템 연동 (PG사)",
       "상품 관리 & 주문 관리",
@@ -71,7 +71,7 @@ export const services: Service[] = [
     description: "Streamlined reservation system for studios, salons, classes, and more. Real-time availability and notifications.",
     descriptionKr: "스튜디오, 살롱, 클래스 등을 위한 실시간 예약 시스템. 자동 알림과 캘린더 연동을 제공합니다.",
     priceLabel: "2,500,000원~",
-    image: "/images/portfolio-3.jpg",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=1000&fit=crop",
     details: [
       "실시간 예약 가능 시간 표시",
       "카카오톡 알림 연동",
@@ -90,7 +90,7 @@ export const services: Service[] = [
     description: "Cross-platform mobile applications built with React Native, delivering native performance on iOS and Android.",
     descriptionKr: "React Native 기반 크로스플랫폼 앱. iOS와 Android 모두에서 네이티브 성능을 제공합니다.",
     priceLabel: "8,000,000원~",
-    image: "/images/sinabro-screenshot.png",
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=1000&fit=crop",
     details: [
       "iOS & Android 동시 개발",
       "푸시 알림 시스템",
@@ -112,7 +112,7 @@ export const services: Service[] = [
     description: "Exclusive access to our 4m×11m European-style studio with forest views, antique furniture, and oak wood floors.",
     descriptionKr: "4m×11m 숲뷰 유럽 감성 스튜디오 전체 대여. 미장벽, 앤틱 가구, 오크 원목 바닥이 어우러진 공간입니다.",
     priceLabel: "300,000원 / 8시간",
-    image: "/images/space-1.jpg",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=1000&fit=crop",
     details: [
       "4m × 11m 넓은 공간",
       "숲뷰 자연 채광",
@@ -131,7 +131,7 @@ export const services: Service[] = [
     description: "Perfect for shorter sessions — portrait shoots, product photography, or intimate gatherings.",
     descriptionKr: "촬영, 제품 사진, 소규모 모임에 적합한 반나절 대여 옵션입니다.",
     priceLabel: "180,000원 / 4시간",
-    image: "/images/space-2.jpg",
+    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1000&fit=crop",
     details: [
       "4시간 사용",
       "기본 조명 장비 제공",
@@ -150,7 +150,7 @@ export const services: Service[] = [
     description: "Host intimate events — small weddings, brand launches, private dinners — in our curated European setting.",
     descriptionKr: "스몰 웨딩, 브랜드 런칭, 프라이빗 디너 등 특별한 이벤트를 유럽 감성 공간에서 진행해 보세요.",
     priceLabel: "500,000원~",
-    image: "/images/space-3.jpg",
+    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=1000&fit=crop",
     details: [
       "맞춤형 공간 세팅",
       "케이터링 연결 가능",
@@ -170,7 +170,7 @@ export const services: Service[] = [
     description: "Explore the world of single malts and blends in our atmospheric studio, guided by a certified whisky sommelier.",
     descriptionKr: "인증 위스키 소믈리에와 함께 싱글몰트와 블렌디드 위스키의 세계를 탐험하는 클래스입니다.",
     priceLabel: "120,000원",
-    image: "/images/whisky.jpg",
+    image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&h=1000&fit=crop",
     details: [
       "5종 위스키 테이스팅",
       "위스키 기본 이론 강의",
@@ -190,7 +190,7 @@ export const services: Service[] = [
     description: "Discover your brand identity — from visual language to storytelling. Led by a KAIST-trained strategist.",
     descriptionKr: "비주얼 랭귀지부터 스토리텔링까지, 나만의 브랜드 아이덴티티를 찾아가는 워크숍입니다.",
     priceLabel: "95,000원",
-    image: "/images/journal-1.jpg",
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=1000&fit=crop",
     details: [
       "브랜드 아이덴티티 설계",
       "무드보드 제작 실습",
@@ -209,7 +209,7 @@ export const services: Service[] = [
     description: "Learn the art of botanical illustration using watercolor pencils and fine liners in our forest-view studio.",
     descriptionKr: "숲뷰 스튜디오에서 수채 색연필과 파인라이너로 보태니컬 일러스트를 배워보세요.",
     priceLabel: "65,000원",
-    image: "/images/journal-2.jpg",
+    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=1000&fit=crop",
     details: [
       "기초 드로잉 기법",
       "수채 색연필 사용법",
@@ -228,7 +228,7 @@ export const services: Service[] = [
     description: "Master pour-over, AeroPress, and cold brew techniques with specialty-grade beans from around the world.",
     descriptionKr: "핸드드립, 에어로프레스, 콜드브루 등 다양한 추출 방법을 스페셜티 원두와 함께 배워봅니다.",
     priceLabel: "75,000원",
-    image: "/images/coffee.jpg",
+    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=1000&fit=crop",
     details: [
       "3가지 추출 방식 실습",
       "커핑 & 테이스팅 노트 작성",
@@ -248,7 +248,7 @@ export const services: Service[] = [
     description: "Hand-selected wool jacket from a Parisian flea market. Rich texture with timeless tailoring.",
     descriptionKr: "파리 벼룩시장에서 직접 셀렉한 울 재킷. 풍성한 텍스처와 타임리스한 테일러링이 특징입니다.",
     priceLabel: "180,000원",
-    image: "/images/vintage-1.jpg",
+    image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=800&h=1000&fit=crop",
     details: [
       "유럽 직접 소싱",
       "울 80%, 폴리 20%",
@@ -268,7 +268,7 @@ export const services: Service[] = [
     description: "A stunning 1960s brass desk lamp sourced from a Belgian antique fair. Fully restored and functional.",
     descriptionKr: "벨기에 앤틱 페어에서 소싱한 1960년대 브라스 데스크 램프. 완전 복원 후 정상 작동합니다.",
     priceLabel: "250,000원",
-    image: "/images/vintage-2.jpg",
+    image: "https://images.unsplash.com/photo-1618220179428-22790b461013?w=800&h=1000&fit=crop",
     details: [
       "1960년대 벨기에 제조",
       "브라스 소재",
@@ -287,7 +287,7 @@ export const services: Service[] = [
     description: "Ornate gilded mirror from a French estate. Perfect as a statement piece for your space.",
     descriptionKr: "프랑스 에스테이트에서 들여온 길트 프레임 거울. 공간의 포인트 피스로 완벽합니다.",
     priceLabel: "320,000원",
-    image: "/images/vintage-3.jpg",
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=1000&fit=crop",
     details: [
       "프랑스 직접 소싱",
       "길트 프레임 (금박)",
@@ -306,7 +306,7 @@ export const services: Service[] = [
     description: "Classic English Windsor chair in solid oak. Naturally aged patina that only time can create.",
     descriptionKr: "솔리드 오크 잉글리시 윈저 체어. 세월이 만들어낸 자연스러운 파티나가 매력적입니다.",
     priceLabel: "280,000원",
-    image: "/images/vintage-4.jpg",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=1000&fit=crop",
     details: [
       "영국 소싱",
       "솔리드 오크 소재",
