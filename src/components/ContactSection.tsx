@@ -147,8 +147,8 @@ export default function ContactSection() {
                   <p className="font-serif text-[10px] tracking-[0.2em] text-stone uppercase mb-1">
                     Phone
                   </p>
-                  <a href="tel:042-831-0831" className="text-[14px] text-dark-brown hover:text-brass transition-colors duration-300 font-sans">
-                    042-831-0831
+                  <a href="tel:010-8687-2129" className="text-[14px] text-dark-brown hover:text-brass transition-colors duration-300 font-sans">
+                    010-8687-2129
                   </a>
                 </div>
                 <div>
@@ -162,7 +162,7 @@ export default function ContactSection() {
                     Address
                   </p>
                   <p className="text-[14px] text-dark-brown font-sans">
-                    대전광역시 유성구 어은동 831
+                    경기 성남시 수정구 고등로 3 현대지식산업센터 성남고등 8층 831호
                   </p>
                 </div>
               </div>

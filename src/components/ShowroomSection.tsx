@@ -30,7 +30,7 @@ export default function ShowroomSection() {
                   Address
                 </p>
                 <p className="text-[14px] text-dark-brown">
-                  대전광역시 유성구 어은동 831
+                  경기 성남시 수정구 고등로 3 현대지식산업센터 성남고등 8층 831호
                 </p>
               </div>
               <div>
@@ -47,7 +47,7 @@ export default function ShowroomSection() {
                 <p className="text-[11px] tracking-[0.1em] text-oak/60 uppercase mb-1">
                   Phone
                 </p>
-                <p className="text-[14px] text-dark-brown">042-831-0831</p>
+                <p className="text-[14px] text-dark-brown">010-8687-2129</p>
               </div>
             </div>
 

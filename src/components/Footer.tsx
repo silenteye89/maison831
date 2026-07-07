@@ -82,7 +82,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2">
               <li className="text-[13px] text-stone/70">hello@maison831.com</li>
-              <li className="text-[13px] text-stone/70">042-831-0831</li>
+              <li className="text-[13px] text-stone/70">010-8687-2129</li>
               <li>
                 <a
                   href="https://instagram.com/maison831"
@@ -113,7 +113,7 @@ export default function Footer() {
             &copy; 2026 Maison831. All rights reserved.
           </p>
           <p className="text-[11px] text-stone/40 tracking-wider">
-            대전광역시 유성구 어은동 831 | 사업자등록번호 000-00-00000
+            경기 성남시 수정구 고등로 3 현대지식산업센터 성남고등 8층 831호 | 사업자등록번호 000-00-00000
           </p>
         </div>
       </div>
