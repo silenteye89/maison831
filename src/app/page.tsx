@@ -8,6 +8,7 @@ import VintageStylingSection from "@/components/VintageStylingSection";
 import ReviewSection from "@/components/ReviewSection";
 import InstagramSection from "@/components/InstagramSection";
 import ShowroomSection from "@/components/ShowroomSection";
+import TeamSection from "@/components/TeamSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <VintageStylingSection />
         <ReviewSection />
         <InstagramSection />
+        <TeamSection />
         <ShowroomSection />
         <ContactSection />
       </main>

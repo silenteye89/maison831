@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Space", href: "#space" },
   { label: "Class", href: "#class" },
   { label: "Vintage", href: "#vintage" },
+  { label: "Team", href: "#team" },
   { label: "Visit", href: "#showroom" },
   { label: "Contact", href: "#contact" },
 ];
