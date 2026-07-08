@@ -18,14 +18,14 @@ export default function AboutSection() {
           <AnimatedSection>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1100&fit=crop&q=80"
+                src="/images/parlour.jpg"
                 alt="Maison831 Studio Interior"
                 className="w-full aspect-[4/5] object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-dark-brown/90 backdrop-blur-sm p-6 md:p-8">
                 <div className="grid grid-cols-2 gap-6">
                   <div>
-                    <p className="font-serif text-3xl text-brass mb-1">4</p>
+                    <p className="font-serif text-3xl text-brass mb-1">3</p>
                     <p className="text-[11px] tracking-[0.12em] text-stone uppercase">
                       Business Areas
                     </p>
