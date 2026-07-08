@@ -12,11 +12,6 @@ const categoryHero: Record<string, { image: string; description: string }> = {
     description:
       "KAIST 출신 엔지니어가 직접 디자인하고 개발합니다. 단순한 홈페이지가 아닌, 비즈니스 성장을 이끄는 디지털 솔루션을 제공합니다.",
   },
-  space: {
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=1000&fit=crop",
-    description:
-      "4m×11m의 숲뷰 유럽 감성 스튜디오. 미장벽, 앤틱 가구, 오크 원목 바닥이 어우러진 공간에서 특별한 순간을 만들어 보세요.",
-  },
   class: {
     image: "https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=800&h=1000&fit=crop",
     description:

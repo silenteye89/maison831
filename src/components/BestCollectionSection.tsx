@@ -11,13 +11,6 @@ const areas = [
     href: "#web",
   },
   {
-    title: "Space Rental",
-    titleKr: "공간 대여",
-    description: "4m×11m 숲뷰 유럽 감성 스튜디오. 미장벽, 앤틱 가구, 오크 원목이 어우러진 공간.",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1000&fit=crop",
-    href: "#space",
-  },
-  {
     title: "One-day Class",
     titleKr: "원데이 클래스",
     description: "위스키, 브랜딩, 보태니컬 드로잉 등 취향을 탐험하는 클래스.",
@@ -48,7 +41,7 @@ export default function BestCollectionSection() {
           className="font-serif text-3xl md:text-4xl text-dark-brown text-center mb-16"
           delay={0.1}
         >
-          네 가지 영역의 큐레이션
+          세 가지 영역의 큐레이션
         </AnimatedText>
 
         <div className="grid sm:grid-cols-2 gap-6 md:gap-8">

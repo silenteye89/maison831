@@ -33,11 +33,6 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#space" className="text-[13px] text-stone/70 hover:text-brass transition-colors">
-                  공간 대여
-                </a>
-              </li>
-              <li>
                 <a href="#class" className="text-[13px] text-stone/70 hover:text-brass transition-colors">
                   원데이 클래스
                 </a>

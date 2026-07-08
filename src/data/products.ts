@@ -1,6 +1,6 @@
 export interface Service {
   id: string;
-  category: "web" | "space" | "class" | "vintage";
+  category: "web" | "class" | "vintage";
   subCategory: string;
   name: string;
   nameKr: string;
@@ -17,7 +17,7 @@ export type Product = Service;
 
 export const categories = [
   { id: "web", label: "Web & App", labelKr: "웹 & 앱", contentLabel: "포트폴리오" },
-  { id: "space", label: "Space", labelKr: "공간대여", contentLabel: "공간 안내" },
+
   { id: "class", label: "Class", labelKr: "클래스", contentLabel: "클래스 안내" },
   { id: "vintage", label: "Vintage", labelKr: "빈티지", contentLabel: "컬렉션" },
 ] as const;
@@ -100,64 +100,6 @@ export const services: Service[] = [
     ],
     isNew: true,
     isPopular: true,
-  },
-
-  // Space Rental
-  {
-    id: "space-full",
-    category: "space",
-    subCategory: "풀타임 대여",
-    name: "Full-Day Studio Rental",
-    nameKr: "스튜디오 풀타임 대여",
-    description: "Exclusive access to our 4m×11m European-style studio with forest views, antique furniture, and oak wood floors.",
-    descriptionKr: "4m×11m 숲뷰 유럽 감성 스튜디오 전체 대여. 미장벽, 앤틱 가구, 오크 원목 바닥이 어우러진 공간입니다.",
-    priceLabel: "300,000원 / 8시간",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=1000&fit=crop",
-    details: [
-      "4m × 11m 넓은 공간",
-      "숲뷰 자연 채광",
-      "미장벽 & 오크 원목 바닥",
-      "앤틱 가구 & 소품 제공",
-      "주차 1대 포함",
-    ],
-    isPopular: true,
-  },
-  {
-    id: "space-half",
-    category: "space",
-    subCategory: "반나절 대여",
-    name: "Half-Day Studio Rental",
-    nameKr: "스튜디오 반나절 대여",
-    description: "Perfect for shorter sessions — portrait shoots, product photography, or intimate gatherings.",
-    descriptionKr: "촬영, 제품 사진, 소규모 모임에 적합한 반나절 대여 옵션입니다.",
-    priceLabel: "180,000원 / 4시간",
-    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=1000&fit=crop",
-    details: [
-      "4시간 사용",
-      "기본 조명 장비 제공",
-      "소품 자유 사용",
-      "최대 10인 수용",
-      "주차 1대 포함",
-    ],
-    isNew: true,
-  },
-  {
-    id: "space-event",
-    category: "space",
-    subCategory: "이벤트",
-    name: "Private Event Package",
-    nameKr: "프라이빗 이벤트 패키지",
-    description: "Host intimate events — small weddings, brand launches, private dinners — in our curated European setting.",
-    descriptionKr: "스몰 웨딩, 브랜드 런칭, 프라이빗 디너 등 특별한 이벤트를 유럽 감성 공간에서 진행해 보세요.",
-    priceLabel: "500,000원~",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&h=1000&fit=crop",
-    details: [
-      "맞춤형 공간 세팅",
-      "케이터링 연결 가능",
-      "플라워 데코 옵션",
-      "사진 촬영 패키지 추가 가능",
-      "최대 20인 수용",
-    ],
   },
 
   // One-day Classes
@@ -325,14 +267,6 @@ export const reviews = [
     rating: 5,
     text: "카이스트 출신 엔지니어가 직접 개발해주셔서 기술적인 완성도가 남달랐어요. 디자인도 세련되고, 소통도 빠르고 정확해서 정말 만족스러운 경험이었습니다.",
     date: "2025.12",
-  },
-  {
-    id: 2,
-    name: "박소현",
-    category: "space",
-    rating: 5,
-    text: "숲뷰가 정말 아름다운 스튜디오예요. 미장벽과 앤틱 가구 덕분에 따로 소품을 준비할 필요가 없었어요. 촬영 결과물이 정말 예뻤습니다.",
-    date: "2025.11",
   },
   {
     id: 3,
