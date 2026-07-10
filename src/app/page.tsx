@@ -8,6 +8,7 @@ import ReviewSection from "@/components/ReviewSection";
 import InstagramSection from "@/components/InstagramSection";
 import ShowroomSection from "@/components/ShowroomSection";
 import TeamSection from "@/components/TeamSection";
+import PhilosophySection from "@/components/PhilosophySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <main className="overflow-x-hidden">
         <HeroSection />
         <AboutSection />
+        <PhilosophySection />
         <BestCollectionSection />
         <CategorySection />
         <VintageStylingSection />
